@@ -10,12 +10,14 @@ This effort will combine the two techniques. The first steps will create new fea
 
 General overview 
 
-New feature: Assign every order to the closest wh (simple Euclidean distance calculation)
+New feature: Create a variable for every order indicating the closest wh (simple Euclidean distance calculation)
 
 If product is available in closest wh, assign that item to the order. This could be RL; sort orders by proximity to wh ; assign while traversing down the list to assure closest to wh orders get the in stock merch
 
-For products not available locally:
-find the available product in the closest other warehouse (closest defined as distance to assigned wh plus dist to other wh)
+Once all local stock for local orders is assigned:
+
+If not in stock locally, append to a 'warehouse wish list'. (warehouse, ordernum, dist,prod) This could possibly be expressed as a hash. Collisions are assigned to the shortest distance (distance between warehouses + dist to order from local wh) first.
+
 Mark the assigned items with the ordernum and the wh they belong in. 
 
 All orders should now be assigned
@@ -26,15 +28,16 @@ Calc the max score for each item (sum sub scores for all items in original order
 Now the main AI part:
 
 Present the observation to the AI:
-A Drone is at position y with the available orders of: [ (ordernum: dist, max score, weight) , …]  
+A Drone is at position X with the available orders of: [ (ordernum: dist, max score, weight) , …]  
 List (some) orders within proximity of furthest avail order from the nearest wh to current drone position 
 Optimally, where should the drone end up? Near a wh (probably) 
 If there are > x choices within half the distance to the next wh, only consider local loops
 Create (in consideration of payload/weight constraint) manifests and use the best option 
-THIS is the AI- manifests optimized by multiple constraints (weight/maxscore/round trip dist/time). The total score per manifest is easy to compute but there are (insert equation) possibilities. Balance this computation cost by limiting scope to reasonable possibilities. (Later: research whether the ´reasoning ´ is ignoring too many optimal solutions) 
+THIS is the AI- manifests optimized by multiple constraints (weight/maxscore/round trip dist/time). The total score per manifest is easy to compute but there are (insert equation) possibilities. Balance this computation cost by limiting scope to reasonable possibilities. (Later: research whether the ´reasonable-ness ´ is ignoring too many optimal solutions) 
 
 
-Limit each to 10,000 iterations or when the ‘ep-mean-rew
+Limit each to 10,000 iterations or when the ‘ep-mean-rew' stabilizes (how to determine?) Can the model be continually trained to shorten training for subsequent searches from same region?
+
 What’s the cost of computation vs value of increased efficiency ? 
 
 
