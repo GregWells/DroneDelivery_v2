@@ -1,29 +1,32 @@
 # DroneDelivery_v2
 Reinforcement learning methodology applied to Kaggle drone challenge 
 
-
 The prior version of this project (https://github.com/GregWells/3402FinalProject) attempted to elicit emergent drone behavior optimized to the Kaggle Challenge goal but utilized a methodology of negative rewards to attempt to train the viable selection criteria. This attempt will present only valid options to the AI with positive value scoring (rewards) to facilitate optimal path selection. 'Unplayable' options will NOT be presented to the AI via the observation--> action --> reward --> observation cyle
 
 Another prior version of this project (https://github.com/GregWells/DATA3402/tree/main/Exams/Final) was previously created without utilizing RL techniques, but rather, purely programmed logic.  
 
 This effort will combine the two techniques. The first steps will create new features and the policies that will shape how the raw data and features will be presented to the AI. A second step will provide viable options to the AI for the model to train on. And the third step will process the resultant action to formulate the new observation.
 
-General overview 
+## Overview
 
 New feature: Create a variable for every order indicating the closest wh (simple Euclidean distance calculation)
+ 
 
 If product is available in closest wh, assign that item to the order. This could be RL; sort orders by proximity to wh ; assign while traversing down the list to assure closest to wh orders get the in stock merch
 
 Once all local stock for local orders is assigned:
 
+
 If not in stock locally, append to a 'warehouse wish list'. (warehouse, ordernum, dist,prod) This could possibly be expressed as a hash. Collisions are assigned to the shortest distance (distance between warehouses + dist to order from local wh) first.
+
+New feature: Create a variable for every order indicating the assigned intermodal warehouse (or None)
 
 Mark the assigned items with the ordernum and the wh they belong in. 
 
 All orders should now be assigned
 
-Calc the max subscore for every order(total dist from (intermodal wh to) wh to customer) 
-Calc the max score for each item (sum sub scores for all items in original order) 
+New Feature: Calc the max possible subscore for every order(total dist from (intermodal wh to) wh to customer) 
+New Feature: Calc the max possible score for each item (sum sub scores for all items in original order) 
 
 Now the main AI part:
 
