@@ -1,4 +1,7 @@
 # DroneDelivery_v2
+
+# This readMe is a work-in-process for notes as I develop the code...
+
 Reinforcement learning methodology applied to Kaggle drone challenge 
 
 The prior version of this project (https://github.com/GregWells/3402FinalProject) attempted to elicit emergent drone behavior optimized to the Kaggle Challenge goal but utilized a methodology of negative rewards to attempt to train the viable selection criteria. This attempt will present only valid options to the AI with positive value scoring (rewards) to facilitate optimal path selection. 'Unplayable' options will NOT be presented to the AI via the observation--> action --> reward --> observation cyle
@@ -6,6 +9,8 @@ The prior version of this project (https://github.com/GregWells/3402FinalProject
 Another prior version of this project (https://github.com/GregWells/DATA3402/tree/main/Exams/Final) was previously created without utilizing RL techniques, but rather, purely programmed logic.  
 
 This effort will combine the two techniques. The first steps will create new features and the policies that will shape how the raw data and features will be presented to the AI. A second step will provide viable options to the AI for the model to train on. And the third step will process the resultant action to formulate the new observation.
+
+
 
 ## Overview
 
