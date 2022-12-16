@@ -14,24 +14,32 @@ This effort will combine the two techniques. The first steps will create new fea
 
 ## Overview
 
-New feature: Create a variable for every order indicating the closest wh (simple Euclidean distance calculation)
+
+- [x] New feature: Create a variable for every order indicating the closest wh (simple Euclidean distance calculation)
  
 
-If product is available in closest wh, assign that item to the order. This could be RL; sort orders by proximity to wh ; assign while traversing down the list to assure closest to wh orders get the in stock merch
 
-Once all local stock for local orders is assigned:
+- [x] If product is available in closest wh, assign that item to the order. This could be RL; sort orders by proximity to wh ; assign while traversing down the list to assure closest to wh orders get the in stock merch
+
+
+- [x] Once all local stock for local orders is assigned:
 
 
 If not in stock locally, append to a 'warehouse wish list'. (warehouse, ordernum, dist,prod) This could possibly be expressed as a hash. Collisions are assigned to the shortest distance (distance between warehouses + dist to order from local wh) first.
 
-New feature: Create a variable for every order indicating the assigned intermodal warehouse (or None)
 
-Mark the assigned items with the ordernum and the wh they belong in. 
+- [x] New feature: Create a variable for every order indicating the assigned intermodal warehouse (or None)
 
-All orders should now be assigned
 
-New Feature: Calc the max possible subscore for every order(total dist from (intermodal wh to) wh to customer) 
-New Feature: Calc the max possible score for each item (sum sub scores for all items in original order) 
+- [x] Mark the assigned items with the ordernum and the wh they belong in. 
+
+
+- [x] All orders should now be assigned
+
+
+- [x] New Feature: Calc the max possible subscore for every order(total dist from (intermodal wh to) wh to customer) 
+
+- [x] New Feature: Calc the max possible score for each item (sum sub scores for all items in original order) 
 
 Now the main AI part:
 
