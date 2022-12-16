@@ -11,7 +11,7 @@ Another [prior version of this project](https://github.com/GregWells/DATA3402/tr
 This effort will combine the two techniques. The first steps will create new features and the policies that will shape how the raw data and features will be presented to the AI. A second step will provide viable options to the AI for the model to train on. And the third step will process the resultant action to formulate the new observation.
 
 ## Detailed summary
-A detailed summary of the ongoing development can be found [here](https://github.com/GregWells/DroneDelivery_v2/detailedSummary.md). 
+A detailed summary of the ongoing development can be found [here](https://github.com/GregWells/DroneDelivery_v2/blob/main/DetailedSummary.md). 
 
 
 ## Overview
