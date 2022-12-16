@@ -1,6 +1,5 @@
 # DroneDelivery_v2
 
-# This readMe is a work-in-process for notes as I develop the code...
 
 Reinforcement learning methodology applied to Kaggle drone delivery challenge 
 
