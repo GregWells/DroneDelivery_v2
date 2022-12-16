@@ -41,18 +41,21 @@ If not in stock locally, append to a 'warehouse wish list'. (warehouse, ordernum
 
 - [x] New Feature: Calc the max possible score for each item (sum sub scores for all items in original order) 
 
+- [ ] New feature: Convert each row,col of warehouse and orders to a dictionary single positive integer value. This code already exists in the prior project
+
+
 Now the main AI part:
 
 Present the observation to the AI:
-A Drone is at position X with the available orders of: [ (ordernum: dist, max score, weight) , …]  
-List (some) orders within proximity of furthest avail order from the nearest wh to current drone position 
-Optimally, where should the drone end up? Near a wh (probably) 
-If there are > x choices within half the distance to the next wh, only consider local loops
-Create (in consideration of payload/weight constraint) manifests and use the best option 
-THIS is the AI- manifests optimized by multiple constraints (weight/maxscore/round trip dist/time). The total score per manifest is easy to compute but there are (insert equation) possibilities. Balance this computation cost by limiting scope to reasonable possibilities. (Later: research whether the ´reasonable-ness ´ is ignoring too many optimal solutions) 
+* A Drone is at position X with the available orders of: [ (ordernum: dist, max score, weight) , …]  
+* List (some) orders within proximity of furthest avail order from the nearest wh to current drone position 
+* Optimally, where should the drone end up? Near a wh (probably) 
+* If there are > x choices within half the distance to the next wh, only consider local loops
+* Create (in consideration of payload/weight constraint) manifests and use the best option 
+* THIS is the main AI portion- manifests optimized by multiple constraints (weight/maxscore/round trip dist/time). The total score per manifest is easy to compute but there are (insert equation) possibilities. Balance this computation cost by limiting scope to reasonable possibilities. (Later: research whether the ´reasonable-ness ´ is ignoring too many optimal solutions) 
 
 
-Limit each to 10,000 iterations or when the ‘ep-mean-rew' stabilizes (how to determine?) Can the model be continually trained to shorten training for subsequent searches from same region?
+Limit each episode to 10,000 iterations or when the ‘ep-mean-rew' stabilizes (how to determine?) Can the model be continually trained to shorten training for subsequent searches from same region?
 
 What’s the cost of computation vs value of increased efficiency ? 
 
