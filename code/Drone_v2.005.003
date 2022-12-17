@@ -18,8 +18,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 140,
-   "id": "d89ec2a3",
+   "execution_count": 193,
+   "id": "6221ca0f",
    "metadata": {},
    "outputs": [
     {
@@ -28,7 +28,49 @@
      "text": [
       "400\n",
       "warehouse Locations:[(113, 179), (234, 599), (195, 89), (215, 207), (220, 326), (182, 193), (75, 418), (228, 140), (310, 26), (297, 423)]\n",
-      "avg_distance btw warehouses:237.74089656575504\n",
+      "avg_distance btw warehouses:237.74089656575504\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n",
+      "ic| d[i].getDest(): (113, 179)\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "There are 1250 total orders\n",
       "OrderNum 0: Cust: 340,371  Line Items:8 \n",
       "OrderNum 1: Cust: 163,320  Line Items:1 \n",
@@ -1419,18 +1461,18 @@
       "Order:2603 being assigned item:11438 NOT in wh:0 --> closest wh:7\n",
       "Order:29 being assigned item:5748 NOT in wh:0 --> closest wh:3\n",
       "Order:30 being assigned item:12300 NOT in wh:0 --> closest wh:8\n",
-      "Order:31 being assigned item:2502 NOT in wh:0 --> closest wh:1\n"
+      "Order:31 being assigned item:2502 NOT in wh:0 --> closest wh:1\n",
+      "Order:3272 being assigned item:12488 NOT in wh:0 --> closest wh:8\n",
+      "Order:3274 being assigned item:8846 NOT in wh:0 --> closest wh:6\n",
+      "Order:3275 being assigned item:4866 NOT in wh:0 --> closest wh:3\n",
+      "Order:3276 being assigned item:4867 NOT in wh:0 --> closest wh:3\n",
+      "Order:3277 being assigned item:8220 NOT in wh:0 --> closest wh:5\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Order:3272 being assigned item:12488 NOT in wh:0 --> closest wh:8\n",
-      "Order:3274 being assigned item:8846 NOT in wh:0 --> closest wh:6\n",
-      "Order:3275 being assigned item:4866 NOT in wh:0 --> closest wh:3\n",
-      "Order:3276 being assigned item:4867 NOT in wh:0 --> closest wh:3\n",
-      "Order:3277 being assigned item:8220 NOT in wh:0 --> closest wh:5\n",
       "Order:3278 being assigned item:9435 NOT in wh:0 --> closest wh:6\n",
       "Order:3282 being assigned item:4094 NOT in wh:0 --> closest wh:2\n",
       "Order:3283 being assigned item:4940 NOT in wh:0 --> closest wh:3\n",
@@ -1558,13 +1600,7 @@
       "Order:7657 being assigned item:13917 NOT in wh:0 --> closest wh:9\n",
       "Order:7658 being assigned item:12722 NOT in wh:0 --> closest wh:8\n",
       "Order:7659 being assigned item:4179 NOT in wh:0 --> closest wh:2\n",
-      "Order:7661 being assigned item:13599 NOT in wh:0 --> closest wh:9\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:7661 being assigned item:13599 NOT in wh:0 --> closest wh:9\n",
       "Order:7662 being assigned item:8738 NOT in wh:0 --> closest wh:6\n",
       "Order:7663 being assigned item:2692 NOT in wh:0 --> closest wh:1\n",
       "Order:7665 being assigned item:10882 NOT in wh:0 --> closest wh:7\n",
@@ -1582,7 +1618,13 @@
       "Order:8493 being assigned item:9363 NOT in wh:0 --> closest wh:6\n",
       "Order:8495 being assigned item:5349 NOT in wh:0 --> closest wh:3\n",
       "Order:8496 being assigned item:8187 NOT in wh:0 --> closest wh:5\n",
-      "Order:8497 being assigned item:4944 NOT in wh:0 --> closest wh:3\n",
+      "Order:8497 being assigned item:4944 NOT in wh:0 --> closest wh:3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:8500 being assigned item:14214 NOT in wh:0 --> closest wh:9\n",
       "Order:3354 being assigned item:7888 NOT in wh:0 --> closest wh:5\n",
       "Order:3355 being assigned item:7889 NOT in wh:0 --> closest wh:5\n",
@@ -1701,13 +1743,7 @@
       "Order:4664 being assigned item:7812 NOT in wh:0 --> closest wh:5\n",
       "Order:4668 being assigned item:7223 NOT in wh:0 --> closest wh:5\n",
       "Order:3486 being assigned item:7770 NOT in wh:0 --> closest wh:5\n",
-      "Order:3488 being assigned item:13349 NOT in wh:0 --> closest wh:9\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:3488 being assigned item:13349 NOT in wh:0 --> closest wh:9\n",
       "Order:5993 being assigned item:3185 NOT in wh:0 --> closest wh:2\n",
       "Order:5994 being assigned item:9172 NOT in wh:0 --> closest wh:6\n",
       "Order:5997 being assigned item:7551 NOT in wh:0 --> closest wh:5\n",
@@ -1726,7 +1762,13 @@
       "Order:1669 being assigned item:5406 NOT in wh:0 --> closest wh:3\n",
       "Order:7774 being assigned item:14433 NOT in wh:0 --> closest wh:9\n",
       "Order:7775 being assigned item:5624 NOT in wh:0 --> closest wh:3\n",
-      "Order:7776 being assigned item:9200 NOT in wh:0 --> closest wh:6\n",
+      "Order:7776 being assigned item:9200 NOT in wh:0 --> closest wh:6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:7777 being assigned item:1497 NOT in wh:0 --> closest wh:1\n",
       "Order:144 being assigned item:3186 NOT in wh:0 --> closest wh:2\n",
       "Order:145 being assigned item:2129 NOT in wh:0 --> closest wh:1\n",
@@ -1838,13 +1880,7 @@
       "Order:6318 being assigned item:13263 NOT in wh:1 --> closest wh:9\n",
       "Order:6319 being assigned item:13440 NOT in wh:1 --> closest wh:9\n",
       "Order:6205 being assigned item:13682 NOT in wh:1 --> closest wh:9\n",
-      "Order:6206 being assigned item:12841 NOT in wh:1 --> closest wh:8\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:6206 being assigned item:12841 NOT in wh:1 --> closest wh:8\n",
       "Order:6207 being assigned item:9708 NOT in wh:1 --> closest wh:6\n",
       "Order:6208 being assigned item:4947 NOT in wh:1 --> closest wh:3\n",
       "Order:6210 being assigned item:12491 NOT in wh:1 --> closest wh:8\n",
@@ -1863,7 +1899,13 @@
       "Order:8676 being assigned item:4873 NOT in wh:1 --> closest wh:3\n",
       "Order:5632 being assigned item:4874 NOT in wh:1 --> closest wh:3\n",
       "Order:5633 being assigned item:11780 NOT in wh:1 --> closest wh:8\n",
-      "Order:5637 being assigned item:3853 NOT in wh:1 --> closest wh:2\n",
+      "Order:5637 being assigned item:3853 NOT in wh:1 --> closest wh:2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:5638 being assigned item:13683 NOT in wh:1 --> closest wh:9\n",
       "Order:5640 being assigned item:3578 NOT in wh:1 --> closest wh:2\n",
       "Order:5643 being assigned item:13527 NOT in wh:1 --> closest wh:9\n",
@@ -1987,13 +2029,7 @@
       "Order:1190 being assigned item:8774 NOT in wh:2 --> closest wh:6\n",
       "Order:1191 being assigned item:8374 NOT in wh:2 --> closest wh:5\n",
       "Order:3843 being assigned item:10659 NOT in wh:2 --> closest wh:7\n",
-      "Order:3844 being assigned item:10432 NOT in wh:2 --> closest wh:7\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:3844 being assigned item:10432 NOT in wh:2 --> closest wh:7\n",
       "Order:9209 being assigned item:5263 NOT in wh:2 --> closest wh:3\n",
       "Order:9211 being assigned item:947 NOT in wh:2 --> closest wh:0\n",
       "Order:6765 being assigned item:9927 NOT in wh:2 --> closest wh:6\n",
@@ -2005,7 +2041,13 @@
       "Order:8781 being assigned item:7339 NOT in wh:2 --> closest wh:5\n",
       "Order:8782 being assigned item:1169 NOT in wh:2 --> closest wh:0\n",
       "Order:8785 being assigned item:975 NOT in wh:2 --> closest wh:0\n",
-      "Order:8786 being assigned item:4391 NOT in wh:2 --> closest wh:3\n",
+      "Order:8786 being assigned item:4391 NOT in wh:2 --> closest wh:3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:932 being assigned item:5842 NOT in wh:2 --> closest wh:3\n",
       "Order:934 being assigned item:6102 NOT in wh:2 --> closest wh:4\n",
       "Order:9233 being assigned item:7677 NOT in wh:2 --> closest wh:5\n",
@@ -2133,17 +2175,17 @@
       "Order:2793 being assigned item:1159 NOT in wh:3 --> closest wh:0\n",
       "Order:2794 being assigned item:3389 NOT in wh:3 --> closest wh:2\n",
       "Order:2796 being assigned item:3897 NOT in wh:3 --> closest wh:2\n",
-      "Order:2797 being assigned item:11279 NOT in wh:3 --> closest wh:7\n"
+      "Order:2797 being assigned item:11279 NOT in wh:3 --> closest wh:7\n",
+      "Order:2798 being assigned item:10031 NOT in wh:3 --> closest wh:6\n",
+      "Order:2799 being assigned item:12492 NOT in wh:3 --> closest wh:8\n",
+      "Order:2801 being assigned item:9840 NOT in wh:3 --> closest wh:6\n",
+      "Order:2802 being assigned item:3854 NOT in wh:3 --> closest wh:2\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Order:2798 being assigned item:10031 NOT in wh:3 --> closest wh:6\n",
-      "Order:2799 being assigned item:12492 NOT in wh:3 --> closest wh:8\n",
-      "Order:2801 being assigned item:9840 NOT in wh:3 --> closest wh:6\n",
-      "Order:2802 being assigned item:3854 NOT in wh:3 --> closest wh:2\n",
       "Order:2804 being assigned item:8199 NOT in wh:3 --> closest wh:5\n",
       "Order:6063 being assigned item:10123 NOT in wh:3 --> closest wh:7\n",
       "Order:6066 being assigned item:8777 NOT in wh:3 --> closest wh:6\n",
@@ -2432,20 +2474,20 @@
       "Order:7856 being assigned item:7840 NOT in wh:3 --> closest wh:5\n",
       "Order:7859 being assigned item:12665 NOT in wh:3 --> closest wh:8\n",
       "Order:3807 being assigned item:10514 NOT in wh:3 --> closest wh:7\n",
-      "Order:3808 being assigned item:12156 NOT in wh:3 --> closest wh:8\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:3808 being assigned item:12156 NOT in wh:3 --> closest wh:8\n",
       "Order:3809 being assigned item:10836 NOT in wh:3 --> closest wh:7\n",
       "Order:3811 being assigned item:7760 NOT in wh:3 --> closest wh:5\n",
       "Order:3812 being assigned item:10337 NOT in wh:3 --> closest wh:7\n",
       "Order:3814 being assigned item:7878 NOT in wh:3 --> closest wh:5\n",
       "Order:3815 being assigned item:3679 NOT in wh:3 --> closest wh:2\n",
       "Order:3816 being assigned item:2949 NOT in wh:3 --> closest wh:2\n",
-      "Order:3817 being assigned item:11281 NOT in wh:3 --> closest wh:7\n",
+      "Order:3817 being assigned item:11281 NOT in wh:3 --> closest wh:7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:3818 being assigned item:7380 NOT in wh:3 --> closest wh:5\n",
       "Order:6008 being assigned item:7841 NOT in wh:3 --> closest wh:5\n",
       "Order:6012 being assigned item:9054 NOT in wh:3 --> closest wh:6\n",
@@ -2572,15 +2614,15 @@
       "Order:7462 being assigned item:7571 NOT in wh:3 --> closest wh:5\n",
       "Order:7463 being assigned item:4190 NOT in wh:3 --> closest wh:2\n",
       "Order:7464 being assigned item:13922 NOT in wh:3 --> closest wh:9\n",
-      "Order:7465 being assigned item:7572 NOT in wh:3 --> closest wh:5\n",
-      "Order:7469 being assigned item:11788 NOT in wh:3 --> closest wh:8\n",
-      "Order:7470 being assigned item:9930 NOT in wh:3 --> closest wh:6\n"
+      "Order:7465 being assigned item:7572 NOT in wh:3 --> closest wh:5\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
+      "Order:7469 being assigned item:11788 NOT in wh:3 --> closest wh:8\n",
+      "Order:7470 being assigned item:9930 NOT in wh:3 --> closest wh:6\n",
       "Order:1097 being assigned item:204 NOT in wh:3 --> closest wh:0\n",
       "Order:1098 being assigned item:482 NOT in wh:3 --> closest wh:0\n",
       "Order:1100 being assigned item:678 NOT in wh:3 --> closest wh:0\n",
@@ -2717,14 +2759,14 @@
       "Order:967 being assigned item:2514 NOT in wh:3 --> closest wh:1\n",
       "Order:2160 being assigned item:7401 NOT in wh:3 --> closest wh:5\n",
       "Order:2161 being assigned item:13266 NOT in wh:3 --> closest wh:9\n",
-      "Order:2162 being assigned item:7417 NOT in wh:3 --> closest wh:5\n"
+      "Order:2162 being assigned item:7417 NOT in wh:3 --> closest wh:5\n",
+      "Order:2163 being assigned item:7814 NOT in wh:3 --> closest wh:5\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Order:2163 being assigned item:7814 NOT in wh:3 --> closest wh:5\n",
       "Order:2164 being assigned item:10338 NOT in wh:3 --> closest wh:7\n",
       "Order:2165 being assigned item:272 NOT in wh:3 --> closest wh:0\n",
       "Order:2170 being assigned item:2061 NOT in wh:3 --> closest wh:1\n",
@@ -2851,13 +2893,7 @@
       "Order:7336 being assigned item:7109 NOT in wh:3 --> closest wh:5\n",
       "Order:7338 being assigned item:7351 NOT in wh:3 --> closest wh:5\n",
       "Order:7339 being assigned item:7837 NOT in wh:3 --> closest wh:5\n",
-      "Order:7272 being assigned item:2515 NOT in wh:3 --> closest wh:1\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:7272 being assigned item:2515 NOT in wh:3 --> closest wh:1\n",
       "Order:7273 being assigned item:7051 NOT in wh:3 --> closest wh:4\n",
       "Order:7274 being assigned item:14515 NOT in wh:3 --> closest wh:9\n",
       "Order:7275 being assigned item:7914 NOT in wh:3 --> closest wh:5\n",
@@ -2868,7 +2904,13 @@
       "Order:7283 being assigned item:9057 NOT in wh:3 --> closest wh:6\n",
       "Order:7284 being assigned item:1030 NOT in wh:3 --> closest wh:0\n",
       "Order:7285 being assigned item:8411 NOT in wh:3 --> closest wh:5\n",
-      "Order:7286 being assigned item:7342 NOT in wh:3 --> closest wh:5\n",
+      "Order:7286 being assigned item:7342 NOT in wh:3 --> closest wh:5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:7287 being assigned item:12026 NOT in wh:3 --> closest wh:8\n",
       "Order:7289 being assigned item:2726 NOT in wh:3 --> closest wh:1\n",
       "Order:9117 being assigned item:9202 NOT in wh:3 --> closest wh:6\n",
@@ -2991,13 +3033,7 @@
       "Order:1832 being assigned item:14042 NOT in wh:3 --> closest wh:9\n",
       "Order:1833 being assigned item:13694 NOT in wh:3 --> closest wh:9\n",
       "Order:1835 being assigned item:9846 NOT in wh:3 --> closest wh:6\n",
-      "Order:1836 being assigned item:642 NOT in wh:3 --> closest wh:0\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:1836 being assigned item:642 NOT in wh:3 --> closest wh:0\n",
       "Order:3248 being assigned item:8635 NOT in wh:3 --> closest wh:6\n",
       "Order:3250 being assigned item:11283 NOT in wh:3 --> closest wh:7\n",
       "Order:3251 being assigned item:8001 NOT in wh:3 --> closest wh:5\n",
@@ -3024,7 +3060,13 @@
       "Order:2294 being assigned item:8372 NOT in wh:3 --> closest wh:5\n",
       "Order:275 being assigned item:2697 NOT in wh:3 --> closest wh:1\n",
       "Order:276 being assigned item:4113 NOT in wh:3 --> closest wh:2\n",
-      "Order:3554 being assigned item:3038 NOT in wh:3 --> closest wh:2\n",
+      "Order:3554 being assigned item:3038 NOT in wh:3 --> closest wh:2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:3555 being assigned item:10600 NOT in wh:3 --> closest wh:7\n",
       "Order:3556 being assigned item:3039 NOT in wh:3 --> closest wh:2\n",
       "Order:9205 being assigned item:7885 NOT in wh:3 --> closest wh:5\n",
@@ -3125,13 +3167,7 @@
       "Order:4926 being assigned item:8144 NOT in wh:3 --> closest wh:5\n",
       "Order:4927 being assigned item:385 NOT in wh:3 --> closest wh:0\n",
       "Order:4928 being assigned item:4194 NOT in wh:3 --> closest wh:2\n",
-      "Order:4929 being assigned item:8019 NOT in wh:3 --> closest wh:5\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:4929 being assigned item:8019 NOT in wh:3 --> closest wh:5\n",
       "Order:4930 being assigned item:13696 NOT in wh:3 --> closest wh:9\n",
       "Order:4931 being assigned item:7421 NOT in wh:3 --> closest wh:5\n",
       "Order:4932 being assigned item:7559 NOT in wh:3 --> closest wh:5\n",
@@ -3174,7 +3210,13 @@
       "Order:6241 being assigned item:2062 NOT in wh:3 --> closest wh:1\n",
       "Order:6242 being assigned item:12227 NOT in wh:3 --> closest wh:8\n",
       "Order:5257 being assigned item:2134 NOT in wh:3 --> closest wh:1\n",
-      "Order:5258 being assigned item:7589 NOT in wh:3 --> closest wh:5\n",
+      "Order:5258 being assigned item:7589 NOT in wh:3 --> closest wh:5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:5259 being assigned item:9365 NOT in wh:3 --> closest wh:6\n",
       "Order:5260 being assigned item:12756 NOT in wh:3 --> closest wh:8\n",
       "Order:5262 being assigned item:8122 NOT in wh:3 --> closest wh:5\n",
@@ -3281,13 +3323,7 @@
       "Order:4267 being assigned item:14226 NOT in wh:3 --> closest wh:9\n",
       "Order:6567 being assigned item:7958 NOT in wh:3 --> closest wh:5\n",
       "Order:6568 being assigned item:11047 NOT in wh:3 --> closest wh:7\n",
-      "Order:6569 being assigned item:9061 NOT in wh:3 --> closest wh:6\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:6569 being assigned item:9061 NOT in wh:3 --> closest wh:6\n",
       "Order:1689 being assigned item:6745 NOT in wh:3 --> closest wh:4\n",
       "Order:1691 being assigned item:12973 NOT in wh:3 --> closest wh:8\n",
       "Order:1693 being assigned item:7503 NOT in wh:3 --> closest wh:5\n",
@@ -3326,7 +3362,13 @@
       "Order:7494 being assigned item:6106 NOT in wh:3 --> closest wh:4\n",
       "Order:7495 being assigned item:7820 NOT in wh:3 --> closest wh:5\n",
       "Order:7496 being assigned item:7164 NOT in wh:3 --> closest wh:5\n",
-      "Order:7498 being assigned item:4115 NOT in wh:3 --> closest wh:2\n",
+      "Order:7498 being assigned item:4115 NOT in wh:3 --> closest wh:2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:7499 being assigned item:7839 NOT in wh:3 --> closest wh:5\n",
       "Order:7249 being assigned item:10668 NOT in wh:3 --> closest wh:7\n",
       "Order:7251 being assigned item:13697 NOT in wh:3 --> closest wh:9\n",
@@ -3424,13 +3466,7 @@
       "Order:8762 being assigned item:5848 NOT in wh:4 --> closest wh:3\n",
       "Order:8764 being assigned item:8065 NOT in wh:4 --> closest wh:5\n",
       "Order:5644 being assigned item:9413 NOT in wh:4 --> closest wh:6\n",
-      "Order:5649 being assigned item:4197 NOT in wh:4 --> closest wh:2\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:5649 being assigned item:4197 NOT in wh:4 --> closest wh:2\n",
       "Order:5650 being assigned item:12669 NOT in wh:4 --> closest wh:8\n",
       "Order:9009 being assigned item:7848 NOT in wh:4 --> closest wh:5\n",
       "Order:9013 being assigned item:5768 NOT in wh:4 --> closest wh:3\n",
@@ -3467,7 +3503,13 @@
       "Order:4473 being assigned item:4709 NOT in wh:4 --> closest wh:3\n",
       "Order:4474 being assigned item:9265 NOT in wh:4 --> closest wh:6\n",
       "Order:4476 being assigned item:12592 NOT in wh:4 --> closest wh:8\n",
-      "Order:4478 being assigned item:7422 NOT in wh:4 --> closest wh:5\n",
+      "Order:4478 being assigned item:7422 NOT in wh:4 --> closest wh:5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:4480 being assigned item:11938 NOT in wh:4 --> closest wh:8\n",
       "Order:8148 being assigned item:10127 NOT in wh:4 --> closest wh:7\n",
       "Order:7044 being assigned item:984 NOT in wh:4 --> closest wh:0\n",
@@ -3563,13 +3605,7 @@
       "Order:1816 being assigned item:11797 NOT in wh:4 --> closest wh:8\n",
       "Order:6161 being assigned item:3756 NOT in wh:4 --> closest wh:2\n",
       "Order:6164 being assigned item:13851 NOT in wh:4 --> closest wh:9\n",
-      "Order:6165 being assigned item:13927 NOT in wh:4 --> closest wh:9\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:6165 being assigned item:13927 NOT in wh:4 --> closest wh:9\n",
       "Order:6167 being assigned item:4891 NOT in wh:4 --> closest wh:3\n",
       "Order:6169 being assigned item:1329 NOT in wh:4 --> closest wh:0\n",
       "Order:6171 being assigned item:14565 NOT in wh:4 --> closest wh:9\n",
@@ -3615,7 +3651,13 @@
       "Order:6466 being assigned item:7633 NOT in wh:4 --> closest wh:5\n",
       "Order:7931 being assigned item:9998 NOT in wh:4 --> closest wh:6\n",
       "Order:119 being assigned item:13227 NOT in wh:4 --> closest wh:9\n",
-      "Order:121 being assigned item:9266 NOT in wh:4 --> closest wh:6\n",
+      "Order:121 being assigned item:9266 NOT in wh:4 --> closest wh:6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:3042 being assigned item:8745 NOT in wh:4 --> closest wh:6\n",
       "Order:3043 being assigned item:62 NOT in wh:4 --> closest wh:0\n",
       "Order:3044 being assigned item:12231 NOT in wh:4 --> closest wh:8\n",
@@ -3709,13 +3751,7 @@
       "Order:1259 being assigned item:5305 NOT in wh:4 --> closest wh:3\n",
       "Order:6220 being assigned item:13655 NOT in wh:4 --> closest wh:9\n",
       "Order:6221 being assigned item:12846 NOT in wh:4 --> closest wh:8\n",
-      "Order:6222 being assigned item:5537 NOT in wh:4 --> closest wh:3\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:6222 being assigned item:5537 NOT in wh:4 --> closest wh:3\n",
       "Order:6225 being assigned item:8871 NOT in wh:4 --> closest wh:6\n",
       "Order:759 being assigned item:14230 NOT in wh:4 --> closest wh:9\n",
       "Order:760 being assigned item:10043 NOT in wh:4 --> closest wh:6\n",
@@ -3762,7 +3798,13 @@
       "Order:5863 being assigned item:183 NOT in wh:4 --> closest wh:0\n",
       "Order:5864 being assigned item:8072 NOT in wh:4 --> closest wh:5\n",
       "Order:5866 being assigned item:14517 NOT in wh:4 --> closest wh:9\n",
-      "Order:5870 being assigned item:4968 NOT in wh:4 --> closest wh:3\n",
+      "Order:5870 being assigned item:4968 NOT in wh:4 --> closest wh:3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:7119 being assigned item:8746 NOT in wh:4 --> closest wh:6\n",
       "Order:9237 being assigned item:14518 NOT in wh:4 --> closest wh:9\n",
       "Order:9239 being assigned item:14023 NOT in wh:4 --> closest wh:9\n",
@@ -3843,13 +3885,7 @@
       "Order:148 being assigned item:1353 NOT in wh:4 --> closest wh:0\n",
       "Order:149 being assigned item:14199 NOT in wh:4 --> closest wh:9\n",
       "Order:150 being assigned item:4893 NOT in wh:4 --> closest wh:3\n",
-      "Order:151 being assigned item:9853 NOT in wh:4 --> closest wh:6\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:151 being assigned item:9853 NOT in wh:4 --> closest wh:6\n",
       "Order:152 being assigned item:7602 NOT in wh:4 --> closest wh:5\n",
       "Order:154 being assigned item:4969 NOT in wh:4 --> closest wh:3\n",
       "Order:3310 being assigned item:3757 NOT in wh:4 --> closest wh:2\n",
@@ -3894,7 +3930,13 @@
       "Order:3456 being assigned item:13964 NOT in wh:4 --> closest wh:9\n",
       "Order:3458 being assigned item:13575 NOT in wh:4 --> closest wh:9\n",
       "Order:3459 being assigned item:8076 NOT in wh:4 --> closest wh:5\n",
-      "Order:3460 being assigned item:12757 NOT in wh:4 --> closest wh:8\n",
+      "Order:3460 being assigned item:12757 NOT in wh:4 --> closest wh:8\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:3461 being assigned item:13576 NOT in wh:4 --> closest wh:9\n",
       "Order:3463 being assigned item:8985 NOT in wh:4 --> closest wh:6\n",
       "Order:7491 being assigned item:8784 NOT in wh:4 --> closest wh:6\n",
@@ -3990,13 +4032,7 @@
       "Order:1565 being assigned item:9317 NOT in wh:4 --> closest wh:6\n",
       "Order:1566 being assigned item:14561 NOT in wh:4 --> closest wh:9\n",
       "Order:7263 being assigned item:11676 NOT in wh:4 --> closest wh:8\n",
-      "Order:7264 being assigned item:576 NOT in wh:4 --> closest wh:0\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:7264 being assigned item:576 NOT in wh:4 --> closest wh:0\n",
       "Order:7265 being assigned item:65 NOT in wh:4 --> closest wh:0\n",
       "Order:7267 being assigned item:14499 NOT in wh:4 --> closest wh:9\n",
       "Order:8061 being assigned item:10519 NOT in wh:4 --> closest wh:7\n",
@@ -4027,7 +4063,13 @@
       "Order:3558 being assigned item:13482 NOT in wh:4 --> closest wh:9\n",
       "Order:3559 being assigned item:8875 NOT in wh:4 --> closest wh:6\n",
       "Order:3560 being assigned item:13305 NOT in wh:4 --> closest wh:9\n",
-      "Order:3561 being assigned item:12796 NOT in wh:4 --> closest wh:8\n",
+      "Order:3561 being assigned item:12796 NOT in wh:4 --> closest wh:8\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:3563 being assigned item:7690 NOT in wh:4 --> closest wh:5\n",
       "Order:3565 being assigned item:14274 NOT in wh:4 --> closest wh:9\n",
       "Order:3566 being assigned item:8386 NOT in wh:4 --> closest wh:5\n",
@@ -4131,13 +4173,7 @@
       "Order:385 being assigned item:14501 NOT in wh:4 --> closest wh:9\n",
       "Order:386 being assigned item:13901 NOT in wh:4 --> closest wh:9\n",
       "Order:389 being assigned item:14368 NOT in wh:4 --> closest wh:9\n",
-      "Order:390 being assigned item:8170 NOT in wh:4 --> closest wh:5\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:390 being assigned item:8170 NOT in wh:4 --> closest wh:5\n",
       "Order:391 being assigned item:11677 NOT in wh:4 --> closest wh:8\n",
       "Order:392 being assigned item:5641 NOT in wh:4 --> closest wh:3\n",
       "Order:393 being assigned item:11458 NOT in wh:4 --> closest wh:7\n",
@@ -4166,7 +4202,13 @@
       "Order:5727 being assigned item:4373 NOT in wh:4 --> closest wh:3\n",
       "Order:5729 being assigned item:4498 NOT in wh:4 --> closest wh:3\n",
       "Order:5730 being assigned item:2735 NOT in wh:4 --> closest wh:1\n",
-      "Order:7152 being assigned item:3860 NOT in wh:4 --> closest wh:2\n",
+      "Order:7152 being assigned item:3860 NOT in wh:4 --> closest wh:2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:7156 being assigned item:5775 NOT in wh:4 --> closest wh:3\n",
       "Order:7157 being assigned item:11459 NOT in wh:4 --> closest wh:7\n",
       "Order:7158 being assigned item:1185 NOT in wh:4 --> closest wh:0\n",
@@ -4265,13 +4307,7 @@
       "Order:1104 being assigned item:9269 NOT in wh:4 --> closest wh:6\n",
       "Order:1105 being assigned item:4714 NOT in wh:4 --> closest wh:3\n",
       "Order:1106 being assigned item:4682 NOT in wh:4 --> closest wh:3\n",
-      "Order:1107 being assigned item:4499 NOT in wh:4 --> closest wh:3\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:1107 being assigned item:4499 NOT in wh:4 --> closest wh:3\n",
       "Order:5210 being assigned item:13466 NOT in wh:4 --> closest wh:9\n",
       "Order:5211 being assigned item:5414 NOT in wh:4 --> closest wh:3\n",
       "Order:5212 being assigned item:10903 NOT in wh:4 --> closest wh:7\n",
@@ -4299,7 +4335,13 @@
       "Order:3130 being assigned item:13662 NOT in wh:4 --> closest wh:9\n",
       "Order:3131 being assigned item:578 NOT in wh:4 --> closest wh:0\n",
       "Order:3132 being assigned item:5415 NOT in wh:4 --> closest wh:3\n",
-      "Order:3134 being assigned item:14427 NOT in wh:4 --> closest wh:9\n",
+      "Order:3134 being assigned item:14427 NOT in wh:4 --> closest wh:9\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:3135 being assigned item:9856 NOT in wh:4 --> closest wh:6\n",
       "Order:3136 being assigned item:10269 NOT in wh:4 --> closest wh:7\n",
       "Order:1861 being assigned item:1514 NOT in wh:4 --> closest wh:1\n",
@@ -4402,13 +4444,7 @@
       "Order:8828 being assigned item:13827 NOT in wh:4 --> closest wh:9\n",
       "Order:8829 being assigned item:8968 NOT in wh:4 --> closest wh:6\n",
       "Order:8830 being assigned item:328 NOT in wh:4 --> closest wh:0\n",
-      "Order:8831 being assigned item:4202 NOT in wh:4 --> closest wh:2\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:8831 being assigned item:4202 NOT in wh:4 --> closest wh:2\n",
       "Order:8832 being assigned item:12114 NOT in wh:4 --> closest wh:8\n",
       "Order:8834 being assigned item:9860 NOT in wh:4 --> closest wh:6\n",
       "Order:2713 being assigned item:14463 NOT in wh:4 --> closest wh:9\n",
@@ -4451,7 +4487,13 @@
       "Order:6439 being assigned item:14456 NOT in wh:4 --> closest wh:9\n",
       "Order:6440 being assigned item:10342 NOT in wh:4 --> closest wh:7\n",
       "Order:6441 being assigned item:1630 NOT in wh:4 --> closest wh:1\n",
-      "Order:6442 being assigned item:8233 NOT in wh:4 --> closest wh:5\n",
+      "Order:6442 being assigned item:8233 NOT in wh:4 --> closest wh:5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:984 being assigned item:4029 NOT in wh:4 --> closest wh:2\n",
       "Order:985 being assigned item:5530 NOT in wh:4 --> closest wh:3\n",
       "Order:986 being assigned item:13931 NOT in wh:4 --> closest wh:9\n",
@@ -4555,13 +4597,7 @@
       "Order:524 being assigned item:13633 NOT in wh:4 --> closest wh:9\n",
       "Order:9345 being assigned item:14358 NOT in wh:4 --> closest wh:9\n",
       "Order:9346 being assigned item:8331 NOT in wh:4 --> closest wh:5\n",
-      "Order:9347 being assigned item:14170 NOT in wh:4 --> closest wh:9\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:9347 being assigned item:14170 NOT in wh:4 --> closest wh:9\n",
       "Order:9348 being assigned item:5359 NOT in wh:4 --> closest wh:3\n",
       "Order:9349 being assigned item:9311 NOT in wh:4 --> closest wh:6\n",
       "Order:9350 being assigned item:14164 NOT in wh:4 --> closest wh:9\n",
@@ -4591,7 +4627,13 @@
       "Order:8228 being assigned item:14171 NOT in wh:4 --> closest wh:9\n",
       "Order:8229 being assigned item:13494 NOT in wh:4 --> closest wh:9\n",
       "Order:8230 being assigned item:13390 NOT in wh:4 --> closest wh:9\n",
-      "Order:8233 being assigned item:7397 NOT in wh:4 --> closest wh:5\n",
+      "Order:8233 being assigned item:7397 NOT in wh:4 --> closest wh:5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:8234 being assigned item:1187 NOT in wh:4 --> closest wh:0\n",
       "Order:8235 being assigned item:2066 NOT in wh:4 --> closest wh:1\n",
       "Order:3942 being assigned item:8987 NOT in wh:4 --> closest wh:6\n",
@@ -4709,13 +4751,7 @@
       "Order:5959 being assigned item:5778 NOT in wh:4 --> closest wh:3\n",
       "Order:5960 being assigned item:13355 NOT in wh:4 --> closest wh:9\n",
       "Order:5962 being assigned item:13618 NOT in wh:4 --> closest wh:9\n",
-      "Order:5963 being assigned item:13852 NOT in wh:4 --> closest wh:9\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:5963 being assigned item:13852 NOT in wh:4 --> closest wh:9\n",
       "Order:5964 being assigned item:5729 NOT in wh:4 --> closest wh:3\n",
       "Order:3506 being assigned item:13581 NOT in wh:4 --> closest wh:9\n",
       "Order:3507 being assigned item:2143 NOT in wh:4 --> closest wh:1\n",
@@ -4737,7 +4773,13 @@
       "Order:2731 being assigned item:7556 NOT in wh:4 --> closest wh:5\n",
       "Order:2732 being assigned item:12509 NOT in wh:4 --> closest wh:8\n",
       "Order:2733 being assigned item:13959 NOT in wh:4 --> closest wh:9\n",
-      "Order:2734 being assigned item:13548 NOT in wh:4 --> closest wh:9\n",
+      "Order:2734 being assigned item:13548 NOT in wh:4 --> closest wh:9\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:2735 being assigned item:14457 NOT in wh:4 --> closest wh:9\n",
       "Order:2736 being assigned item:13477 NOT in wh:4 --> closest wh:9\n",
       "Order:2737 being assigned item:8991 NOT in wh:4 --> closest wh:6\n",
@@ -4859,13 +4901,7 @@
       "Order:8663 being assigned item:493 NOT in wh:4 --> closest wh:0\n",
       "Order:491 being assigned item:3504 NOT in wh:4 --> closest wh:2\n",
       "Order:492 being assigned item:5539 NOT in wh:4 --> closest wh:3\n",
-      "Order:493 being assigned item:5561 NOT in wh:4 --> closest wh:3\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:493 being assigned item:5561 NOT in wh:4 --> closest wh:3\n",
       "Order:494 being assigned item:13480 NOT in wh:4 --> closest wh:9\n",
       "Order:495 being assigned item:14172 NOT in wh:4 --> closest wh:9\n",
       "Order:7570 being assigned item:1088 NOT in wh:4 --> closest wh:0\n",
@@ -4886,7 +4922,13 @@
       "Order:995 being assigned item:7782 NOT in wh:4 --> closest wh:5\n",
       "Order:996 being assigned item:13470 NOT in wh:4 --> closest wh:9\n",
       "Order:9078 being assigned item:13155 NOT in wh:4 --> closest wh:9\n",
-      "Order:9079 being assigned item:1036 NOT in wh:4 --> closest wh:0\n",
+      "Order:9079 being assigned item:1036 NOT in wh:4 --> closest wh:0\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:9080 being assigned item:13156 NOT in wh:4 --> closest wh:9\n",
       "Order:9081 being assigned item:11545 NOT in wh:4 --> closest wh:8\n",
       "Order:9082 being assigned item:4298 NOT in wh:4 --> closest wh:3\n",
@@ -5013,13 +5055,7 @@
       "Order:7215 being assigned item:7276 NOT in wh:4 --> closest wh:5\n",
       "Order:7216 being assigned item:13622 NOT in wh:4 --> closest wh:9\n",
       "Order:7217 being assigned item:13869 NOT in wh:4 --> closest wh:9\n",
-      "Order:7218 being assigned item:11810 NOT in wh:4 --> closest wh:8\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:7218 being assigned item:11810 NOT in wh:4 --> closest wh:8\n",
       "Order:4486 being assigned item:14317 NOT in wh:4 --> closest wh:9\n",
       "Order:4487 being assigned item:14006 NOT in wh:4 --> closest wh:9\n",
       "Order:4488 being assigned item:7638 NOT in wh:4 --> closest wh:5\n",
@@ -5030,7 +5066,13 @@
       "Order:4493 being assigned item:8639 NOT in wh:4 --> closest wh:6\n",
       "Order:5341 being assigned item:10526 NOT in wh:4 --> closest wh:7\n",
       "Order:5342 being assigned item:14281 NOT in wh:4 --> closest wh:9\n",
-      "Order:5343 being assigned item:69 NOT in wh:4 --> closest wh:0\n",
+      "Order:5343 being assigned item:69 NOT in wh:4 --> closest wh:0\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:5344 being assigned item:12851 NOT in wh:4 --> closest wh:8\n",
       "Order:5345 being assigned item:14206 NOT in wh:4 --> closest wh:9\n",
       "Order:1153 being assigned item:9972 NOT in wh:4 --> closest wh:6\n",
@@ -5166,13 +5208,7 @@
       "Order:5927 being assigned item:8297 NOT in wh:4 --> closest wh:5\n",
       "Order:5928 being assigned item:11294 NOT in wh:4 --> closest wh:7\n",
       "Order:5929 being assigned item:7394 NOT in wh:4 --> closest wh:5\n",
-      "Order:5930 being assigned item:12760 NOT in wh:4 --> closest wh:8\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:5930 being assigned item:12760 NOT in wh:4 --> closest wh:8\n",
       "Order:5931 being assigned item:2739 NOT in wh:4 --> closest wh:1\n",
       "Order:5932 being assigned item:71 NOT in wh:4 --> closest wh:0\n",
       "Order:5933 being assigned item:10011 NOT in wh:4 --> closest wh:6\n",
@@ -5188,7 +5224,13 @@
       "Order:5225 being assigned item:9867 NOT in wh:5 --> closest wh:6\n",
       "Order:5226 being assigned item:11547 NOT in wh:5 --> closest wh:8\n",
       "Order:7574 being assigned item:4717 NOT in wh:5 --> closest wh:3\n",
-      "Order:7575 being assigned item:10051 NOT in wh:5 --> closest wh:6\n",
+      "Order:7575 being assigned item:10051 NOT in wh:5 --> closest wh:6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:7577 being assigned item:14009 NOT in wh:5 --> closest wh:9\n",
       "Order:7578 being assigned item:5563 NOT in wh:5 --> closest wh:3\n",
       "Order:7246 being assigned item:5277 NOT in wh:5 --> closest wh:3\n",
@@ -5308,13 +5350,7 @@
       "Order:8474 being assigned item:3444 NOT in wh:5 --> closest wh:2\n",
       "Order:5671 being assigned item:6336 NOT in wh:5 --> closest wh:4\n",
       "Order:5672 being assigned item:10877 NOT in wh:5 --> closest wh:7\n",
-      "Order:5674 being assigned item:11075 NOT in wh:5 --> closest wh:7\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:5674 being assigned item:11075 NOT in wh:5 --> closest wh:7\n",
       "Order:5675 being assigned item:12039 NOT in wh:5 --> closest wh:8\n",
       "Order:5676 being assigned item:11435 NOT in wh:5 --> closest wh:7\n",
       "Order:5677 being assigned item:10777 NOT in wh:5 --> closest wh:7\n",
@@ -5330,7 +5366,13 @@
       "Order:1850 being assigned item:4719 NOT in wh:5 --> closest wh:3\n",
       "Order:1851 being assigned item:11399 NOT in wh:5 --> closest wh:7\n",
       "Order:1852 being assigned item:2311 NOT in wh:5 --> closest wh:1\n",
-      "Order:6489 being assigned item:10392 NOT in wh:5 --> closest wh:7\n",
+      "Order:6489 being assigned item:10392 NOT in wh:5 --> closest wh:7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:6841 being assigned item:3592 NOT in wh:5 --> closest wh:2\n",
       "Order:908 being assigned item:687 NOT in wh:5 --> closest wh:0\n",
       "Order:909 being assigned item:2660 NOT in wh:5 --> closest wh:1\n",
@@ -5455,13 +5497,7 @@
       "Order:3215 being assigned item:688 NOT in wh:5 --> closest wh:0\n",
       "Order:3216 being assigned item:1279 NOT in wh:5 --> closest wh:0\n",
       "Order:3218 being assigned item:11501 NOT in wh:5 --> closest wh:7\n",
-      "Order:3219 being assigned item:11600 NOT in wh:5 --> closest wh:8\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:3219 being assigned item:11600 NOT in wh:5 --> closest wh:8\n",
       "Order:3220 being assigned item:6179 NOT in wh:5 --> closest wh:4\n",
       "Order:3221 being assigned item:12123 NOT in wh:5 --> closest wh:8\n",
       "Order:3468 being assigned item:584 NOT in wh:5 --> closest wh:0\n",
@@ -5475,7 +5511,13 @@
       "Order:2941 being assigned item:1763 NOT in wh:5 --> closest wh:1\n",
       "Order:2943 being assigned item:8888 NOT in wh:5 --> closest wh:6\n",
       "Order:2944 being assigned item:2620 NOT in wh:5 --> closest wh:1\n",
-      "Order:5102 being assigned item:10792 NOT in wh:5 --> closest wh:7\n",
+      "Order:5102 being assigned item:10792 NOT in wh:5 --> closest wh:7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:5103 being assigned item:12041 NOT in wh:5 --> closest wh:8\n",
       "Order:5104 being assigned item:13011 NOT in wh:5 --> closest wh:8\n",
       "Order:5105 being assigned item:6507 NOT in wh:5 --> closest wh:4\n",
@@ -5602,13 +5644,7 @@
       "Order:2704 being assigned item:5542 NOT in wh:5 --> closest wh:3\n",
       "Order:2705 being assigned item:5608 NOT in wh:5 --> closest wh:3\n",
       "Order:2706 being assigned item:9725 NOT in wh:5 --> closest wh:6\n",
-      "Order:2709 being assigned item:14321 NOT in wh:5 --> closest wh:9\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:2709 being assigned item:14321 NOT in wh:5 --> closest wh:9\n",
       "Order:2710 being assigned item:10781 NOT in wh:5 --> closest wh:7\n",
       "Order:7994 being assigned item:10566 NOT in wh:5 --> closest wh:7\n",
       "Order:7995 being assigned item:2312 NOT in wh:5 --> closest wh:1\n",
@@ -5616,7 +5652,13 @@
       "Order:7997 being assigned item:11013 NOT in wh:5 --> closest wh:7\n",
       "Order:7998 being assigned item:9672 NOT in wh:5 --> closest wh:6\n",
       "Order:7999 being assigned item:11051 NOT in wh:5 --> closest wh:7\n",
-      "Order:8002 being assigned item:10135 NOT in wh:5 --> closest wh:7\n",
+      "Order:8002 being assigned item:10135 NOT in wh:5 --> closest wh:7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:5834 being assigned item:6904 NOT in wh:5 --> closest wh:4\n",
       "Order:5835 being assigned item:11394 NOT in wh:5 --> closest wh:7\n",
       "Order:5836 being assigned item:5649 NOT in wh:5 --> closest wh:3\n",
@@ -5746,7 +5788,13 @@
       "Order:3847 being assigned item:4561 NOT in wh:6 --> closest wh:3\n",
       "Order:3848 being assigned item:10397 NOT in wh:6 --> closest wh:7\n",
       "Order:3851 being assigned item:5423 NOT in wh:6 --> closest wh:3\n",
-      "Order:6782 being assigned item:995 NOT in wh:6 --> closest wh:0\n",
+      "Order:6782 being assigned item:995 NOT in wh:6 --> closest wh:0\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:6783 being assigned item:12602 NOT in wh:6 --> closest wh:8\n",
       "Order:6784 being assigned item:10529 NOT in wh:6 --> closest wh:7\n",
       "Order:8943 being assigned item:6426 NOT in wh:6 --> closest wh:4\n",
@@ -5756,13 +5804,7 @@
       "Order:8950 being assigned item:1755 NOT in wh:6 --> closest wh:1\n",
       "Order:8952 being assigned item:2254 NOT in wh:6 --> closest wh:1\n",
       "Order:9304 being assigned item:12240 NOT in wh:6 --> closest wh:8\n",
-      "Order:9306 being assigned item:1092 NOT in wh:6 --> closest wh:0\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:9306 being assigned item:1092 NOT in wh:6 --> closest wh:0\n",
       "Order:9308 being assigned item:12042 NOT in wh:6 --> closest wh:8\n",
       "Order:2410 being assigned item:951 NOT in wh:6 --> closest wh:0\n",
       "Order:5253 being assigned item:2743 NOT in wh:6 --> closest wh:1\n",
@@ -5884,7 +5926,13 @@
       "Order:2388 being assigned item:2826 NOT in wh:6 --> closest wh:1\n",
       "Order:2389 being assigned item:4723 NOT in wh:6 --> closest wh:3\n",
       "Order:2391 being assigned item:8093 NOT in wh:6 --> closest wh:5\n",
-      "Order:2392 being assigned item:12241 NOT in wh:6 --> closest wh:8\n",
+      "Order:2392 being assigned item:12241 NOT in wh:6 --> closest wh:8\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:2394 being assigned item:12310 NOT in wh:6 --> closest wh:8\n",
       "Order:5239 being assigned item:4138 NOT in wh:6 --> closest wh:2\n",
       "Order:5243 being assigned item:3593 NOT in wh:6 --> closest wh:2\n",
@@ -5902,13 +5950,7 @@
       "Order:2829 being assigned item:1521 NOT in wh:6 --> closest wh:1\n",
       "Order:2830 being assigned item:12981 NOT in wh:6 --> closest wh:8\n",
       "Order:2831 being assigned item:2314 NOT in wh:6 --> closest wh:1\n",
-      "Order:2833 being assigned item:5239 NOT in wh:6 --> closest wh:3\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:2833 being assigned item:5239 NOT in wh:6 --> closest wh:3\n",
       "Order:2834 being assigned item:13847 NOT in wh:6 --> closest wh:9\n",
       "Order:4556 being assigned item:2474 NOT in wh:6 --> closest wh:1\n",
       "Order:4558 being assigned item:12896 NOT in wh:6 --> closest wh:8\n",
@@ -6022,7 +6064,13 @@
       "Order:4758 being assigned item:5544 NOT in wh:6 --> closest wh:3\n",
       "Order:1218 being assigned item:11133 NOT in wh:6 --> closest wh:7\n",
       "Order:1219 being assigned item:998 NOT in wh:6 --> closest wh:0\n",
-      "Order:1220 being assigned item:1095 NOT in wh:6 --> closest wh:0\n",
+      "Order:1220 being assigned item:1095 NOT in wh:6 --> closest wh:0\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:1221 being assigned item:74 NOT in wh:6 --> closest wh:0\n",
       "Order:1222 being assigned item:10689 NOT in wh:6 --> closest wh:7\n",
       "Order:1225 being assigned item:1549 NOT in wh:6 --> closest wh:1\n",
@@ -6040,13 +6088,7 @@
       "Order:740 being assigned item:1357 NOT in wh:6 --> closest wh:0\n",
       "Order:741 being assigned item:1771 NOT in wh:6 --> closest wh:1\n",
       "Order:746 being assigned item:1358 NOT in wh:6 --> closest wh:0\n",
-      "Order:5036 being assigned item:691 NOT in wh:6 --> closest wh:0\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:5036 being assigned item:691 NOT in wh:6 --> closest wh:0\n",
       "Order:5037 being assigned item:1767 NOT in wh:6 --> closest wh:1\n",
       "Order:5039 being assigned item:6792 NOT in wh:6 --> closest wh:4\n",
       "Order:5041 being assigned item:1482 NOT in wh:6 --> closest wh:1\n",
@@ -6168,7 +6210,13 @@
       "Order:4325 being assigned item:13247 NOT in wh:6 --> closest wh:9\n",
       "Order:4329 being assigned item:12129 NOT in wh:6 --> closest wh:8\n",
       "Order:5663 being assigned item:14243 NOT in wh:6 --> closest wh:9\n",
-      "Order:8033 being assigned item:5430 NOT in wh:6 --> closest wh:3\n",
+      "Order:8033 being assigned item:5430 NOT in wh:6 --> closest wh:3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:8035 being assigned item:13365 NOT in wh:6 --> closest wh:9\n",
       "Order:8036 being assigned item:1840 NOT in wh:6 --> closest wh:1\n",
       "Order:8037 being assigned item:13366 NOT in wh:6 --> closest wh:9\n",
@@ -6184,13 +6232,7 @@
       "Order:25 being assigned item:14345 NOT in wh:6 --> closest wh:9\n",
       "Order:27 being assigned item:4344 NOT in wh:6 --> closest wh:3\n",
       "Order:5934 being assigned item:2257 NOT in wh:6 --> closest wh:1\n",
-      "Order:2744 being assigned item:2815 NOT in wh:6 --> closest wh:1\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:2744 being assigned item:2815 NOT in wh:6 --> closest wh:1\n",
       "Order:2745 being assigned item:4611 NOT in wh:6 --> closest wh:3\n",
       "Order:2746 being assigned item:10401 NOT in wh:6 --> closest wh:7\n",
       "Order:2747 being assigned item:1954 NOT in wh:6 --> closest wh:1\n",
@@ -6318,15 +6360,15 @@
       "Order:3698 being assigned item:7137 NOT in wh:7 --> closest wh:5\n",
       "Order:3699 being assigned item:9209 NOT in wh:7 --> closest wh:6\n",
       "Order:3700 being assigned item:14326 NOT in wh:7 --> closest wh:9\n",
-      "Order:3701 being assigned item:3987 NOT in wh:7 --> closest wh:2\n"
+      "Order:3701 being assigned item:3987 NOT in wh:7 --> closest wh:2\n",
+      "Order:3702 being assigned item:7643 NOT in wh:7 --> closest wh:5\n",
+      "Order:643 being assigned item:3381 NOT in wh:7 --> closest wh:2\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Order:3702 being assigned item:7643 NOT in wh:7 --> closest wh:5\n",
-      "Order:643 being assigned item:3381 NOT in wh:7 --> closest wh:2\n",
       "Order:644 being assigned item:11689 NOT in wh:7 --> closest wh:8\n",
       "Order:2121 being assigned item:3373 NOT in wh:7 --> closest wh:2\n",
       "Order:2122 being assigned item:9881 NOT in wh:7 --> closest wh:6\n",
@@ -6455,19 +6497,19 @@
       "Order:4648 being assigned item:3618 NOT in wh:7 --> closest wh:2\n",
       "Order:4649 being assigned item:12518 NOT in wh:7 --> closest wh:8\n",
       "Order:4650 being assigned item:1931 NOT in wh:7 --> closest wh:1\n",
-      "Order:9071 being assigned item:4214 NOT in wh:7 --> closest wh:2\n"
+      "Order:9071 being assigned item:4214 NOT in wh:7 --> closest wh:2\n",
+      "Order:2647 being assigned item:12985 NOT in wh:7 --> closest wh:8\n",
+      "Order:2649 being assigned item:8242 NOT in wh:7 --> closest wh:5\n",
+      "Order:2650 being assigned item:3147 NOT in wh:7 --> closest wh:2\n",
+      "Order:2652 being assigned item:3257 NOT in wh:7 --> closest wh:2\n",
+      "Order:5749 being assigned item:13720 NOT in wh:7 --> closest wh:9\n",
+      "Order:5750 being assigned item:3210 NOT in wh:7 --> closest wh:2\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Order:2647 being assigned item:12985 NOT in wh:7 --> closest wh:8\n",
-      "Order:2649 being assigned item:8242 NOT in wh:7 --> closest wh:5\n",
-      "Order:2650 being assigned item:3147 NOT in wh:7 --> closest wh:2\n",
-      "Order:2652 being assigned item:3257 NOT in wh:7 --> closest wh:2\n",
-      "Order:5749 being assigned item:13720 NOT in wh:7 --> closest wh:9\n",
-      "Order:5750 being assigned item:3210 NOT in wh:7 --> closest wh:2\n",
       "Order:5752 being assigned item:3988 NOT in wh:7 --> closest wh:2\n",
       "Order:5754 being assigned item:5241 NOT in wh:7 --> closest wh:3\n",
       "Order:5755 being assigned item:12854 NOT in wh:7 --> closest wh:8\n",
@@ -6599,13 +6641,7 @@
       "Order:2766 being assigned item:3525 NOT in wh:7 --> closest wh:2\n",
       "Order:2413 being assigned item:3483 NOT in wh:7 --> closest wh:2\n",
       "Order:2415 being assigned item:3775 NOT in wh:7 --> closest wh:2\n",
-      "Order:2418 being assigned item:3955 NOT in wh:7 --> closest wh:2\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:2418 being assigned item:3955 NOT in wh:7 --> closest wh:2\n",
       "Order:7703 being assigned item:1997 NOT in wh:7 --> closest wh:1\n",
       "Order:7705 being assigned item:14390 NOT in wh:7 --> closest wh:9\n",
       "Order:7706 being assigned item:12520 NOT in wh:7 --> closest wh:8\n",
@@ -6618,7 +6654,13 @@
       "Order:7454 being assigned item:12194 NOT in wh:7 --> closest wh:8\n",
       "Order:7456 being assigned item:4405 NOT in wh:7 --> closest wh:3\n",
       "Order:7457 being assigned item:1932 NOT in wh:7 --> closest wh:1\n",
-      "Order:2682 being assigned item:2320 NOT in wh:7 --> closest wh:1\n",
+      "Order:2682 being assigned item:2320 NOT in wh:7 --> closest wh:1\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:2684 being assigned item:3059 NOT in wh:7 --> closest wh:2\n",
       "Order:1493 being assigned item:3012 NOT in wh:7 --> closest wh:2\n",
       "Order:1494 being assigned item:7645 NOT in wh:7 --> closest wh:5\n",
@@ -6736,13 +6778,7 @@
       "Order:2842 being assigned item:6183 NOT in wh:9 --> closest wh:4\n",
       "Order:1285 being assigned item:1476 NOT in wh:9 --> closest wh:1\n",
       "Order:1287 being assigned item:7712 NOT in wh:9 --> closest wh:5\n",
-      "Order:1289 being assigned item:12735 NOT in wh:9 --> closest wh:8\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:1289 being assigned item:12735 NOT in wh:9 --> closest wh:8\n",
       "Order:1292 being assigned item:3777 NOT in wh:9 --> closest wh:2\n",
       "Order:1295 being assigned item:7369 NOT in wh:9 --> closest wh:5\n",
       "Order:1296 being assigned item:11940 NOT in wh:9 --> closest wh:8\n",
@@ -6755,7 +6791,13 @@
       "Order:8301 being assigned item:12767 NOT in wh:9 --> closest wh:8\n",
       "Order:2753 being assigned item:9456 NOT in wh:9 --> closest wh:6\n",
       "Order:2755 being assigned item:4366 NOT in wh:9 --> closest wh:3\n",
-      "Order:2756 being assigned item:1980 NOT in wh:9 --> closest wh:1\n",
+      "Order:2756 being assigned item:1980 NOT in wh:9 --> closest wh:1\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:2757 being assigned item:12608 NOT in wh:9 --> closest wh:8\n",
       "Order:2901 being assigned item:78 NOT in wh:9 --> closest wh:0\n",
       "Order:2902 being assigned item:3598 NOT in wh:9 --> closest wh:2\n",
@@ -6879,19 +6921,19 @@
       "Order:3874 being assigned item:1587 NOT in wh:9 --> closest wh:1\n",
       "Order:2567 being assigned item:10928 NOT in wh:9 --> closest wh:7\n",
       "Order:2568 being assigned item:504 NOT in wh:9 --> closest wh:0\n",
-      "Order:2571 being assigned item:2193 NOT in wh:9 --> closest wh:1\n"
+      "Order:2571 being assigned item:2193 NOT in wh:9 --> closest wh:1\n",
+      "Order:2573 being assigned item:2969 NOT in wh:9 --> closest wh:2\n",
+      "Order:4284 being assigned item:8707 NOT in wh:9 --> closest wh:6\n",
+      "Order:4285 being assigned item:6404 NOT in wh:9 --> closest wh:4\n",
+      "Order:4286 being assigned item:5867 NOT in wh:9 --> closest wh:3\n",
+      "Order:9251 being assigned item:2039 NOT in wh:9 --> closest wh:1\n",
+      "Order:9252 being assigned item:10405 NOT in wh:9 --> closest wh:7\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Order:2573 being assigned item:2969 NOT in wh:9 --> closest wh:2\n",
-      "Order:4284 being assigned item:8707 NOT in wh:9 --> closest wh:6\n",
-      "Order:4285 being assigned item:6404 NOT in wh:9 --> closest wh:4\n",
-      "Order:4286 being assigned item:5867 NOT in wh:9 --> closest wh:3\n",
-      "Order:9251 being assigned item:2039 NOT in wh:9 --> closest wh:1\n",
-      "Order:9252 being assigned item:10405 NOT in wh:9 --> closest wh:7\n",
       "Order:4236 being assigned item:2434 NOT in wh:9 --> closest wh:1\n",
       "Order:4956 being assigned item:2446 NOT in wh:9 --> closest wh:1\n",
       "Order:4957 being assigned item:2797 NOT in wh:9 --> closest wh:1\n",
@@ -7013,13 +7055,7 @@
       "Order:1941 being assigned item:1946 NOT in wh:9 --> closest wh:1\n",
       "Order:1943 being assigned item:2867 NOT in wh:9 --> closest wh:1\n",
       "Order:1944 being assigned item:4734 NOT in wh:9 --> closest wh:3\n",
-      "Order:1945 being assigned item:1760 NOT in wh:9 --> closest wh:1\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:1945 being assigned item:1760 NOT in wh:9 --> closest wh:1\n",
       "Order:1946 being assigned item:5439 NOT in wh:9 --> closest wh:3\n",
       "Order:1947 being assigned item:5791 NOT in wh:9 --> closest wh:3\n",
       "Order:1948 being assigned item:895 NOT in wh:9 --> closest wh:0\n",
@@ -7051,7 +7087,13 @@
       "Order:5538 being assigned item:2378 NOT in wh:9 --> closest wh:1\n",
       "Order:5817 being assigned item:1655 NOT in wh:9 --> closest wh:1\n",
       "Order:2689 being assigned item:9951 NOT in wh:9 --> closest wh:6\n",
-      "Order:2690 being assigned item:12049 NOT in wh:9 --> closest wh:8\n",
+      "Order:2690 being assigned item:12049 NOT in wh:9 --> closest wh:8\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:2691 being assigned item:2970 NOT in wh:9 --> closest wh:2\n",
       "Order:2692 being assigned item:2322 NOT in wh:9 --> closest wh:1\n",
       "Order:2694 being assigned item:4565 NOT in wh:9 --> closest wh:3\n",
@@ -7158,13 +7200,7 @@
       "Order:8073 being assigned item:8962 NOT in wh:9 --> closest wh:6\n",
       "Order:8074 being assigned item:1887 NOT in wh:9 --> closest wh:1\n",
       "Order:8075 being assigned item:9886 NOT in wh:9 --> closest wh:6\n",
-      "Order:8076 being assigned item:762 NOT in wh:9 --> closest wh:0\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:8076 being assigned item:762 NOT in wh:9 --> closest wh:0\n",
       "Order:8077 being assigned item:2040 NOT in wh:9 --> closest wh:1\n",
       "Order:8078 being assigned item:8799 NOT in wh:9 --> closest wh:6\n",
       "Order:8079 being assigned item:1800 NOT in wh:9 --> closest wh:1\n",
@@ -7202,7 +7238,13 @@
       "Order:8692 being assigned item:5663 NOT in wh:9 --> closest wh:3\n",
       "Order:8693 being assigned item:2077 NOT in wh:9 --> closest wh:1\n",
       "Order:1062 being assigned item:11230 NOT in wh:9 --> closest wh:7\n",
-      "Order:1063 being assigned item:8248 NOT in wh:9 --> closest wh:5\n",
+      "Order:1063 being assigned item:8248 NOT in wh:9 --> closest wh:5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:1064 being assigned item:11272 NOT in wh:9 --> closest wh:7\n",
       "Order:1066 being assigned item:8667 NOT in wh:9 --> closest wh:6\n",
       "Order:1067 being assigned item:7977 NOT in wh:9 --> closest wh:5\n",
@@ -7312,13 +7354,7 @@
       "Order:6944 being assigned item:11551 NOT in wh:9 --> closest wh:8\n",
       "Order:4833 being assigned item:12815 NOT in wh:9 --> closest wh:8\n",
       "Order:4834 being assigned item:6912 NOT in wh:9 --> closest wh:4\n",
-      "Order:4835 being assigned item:3712 NOT in wh:9 --> closest wh:2\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
+      "Order:4835 being assigned item:3712 NOT in wh:9 --> closest wh:2\n",
       "Order:4836 being assigned item:1835 NOT in wh:9 --> closest wh:1\n",
       "Order:4837 being assigned item:10484 NOT in wh:9 --> closest wh:7\n",
       "Order:4838 being assigned item:2437 NOT in wh:9 --> closest wh:1\n",
@@ -7339,7 +7375,13 @@
       "Order:8936 being assigned item:1491 NOT in wh:9 --> closest wh:1\n",
       "Order:4596 being assigned item:11607 NOT in wh:9 --> closest wh:8\n",
       "Order:4597 being assigned item:9125 NOT in wh:9 --> closest wh:6\n",
-      "Order:4598 being assigned item:633 NOT in wh:9 --> closest wh:0\n",
+      "Order:4598 being assigned item:633 NOT in wh:9 --> closest wh:0\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
       "Order:4599 being assigned item:3874 NOT in wh:9 --> closest wh:2\n",
       "Order:7835 being assigned item:3194 NOT in wh:9 --> closest wh:2\n",
       "Order:7837 being assigned item:842 NOT in wh:9 --> closest wh:0\n",
@@ -7419,16 +7461,8 @@
       "Warehouse:6 Intermodal list length:618\n",
       "Warehouse:7 Intermodal list length:317\n",
       "Warehouse:8 Intermodal list length:36\n",
-      "Warehouse:9 Intermodal list length:714\n"
-     ]
-    },
-    {
-     "ename": "SystemExit",
-     "evalue": "Stop right here to evaluate!",
-     "output_type": "error",
-     "traceback": [
-      "An exception has occurred, use %tb to see the full traceback.\n",
-      "\u001b[1;31mSystemExit\u001b[0m\u001b[1;31m:\u001b[0m Stop right here to evaluate!\n"
+      "Warehouse:9 Intermodal list length:714\n",
+      "Time deadline: 112993\n"
      ]
     }
    ],
@@ -8319,8 +8353,8 @@
     "        self.__maxLoad=maxLoad\n",
     "        self.__enRoute=False\n",
     "        self.__deliveringBoxIndex=False\n",
-    "        self.__destRow=False\n",
-    "        self.__destCol=False\n",
+    "        self.__destRow=row\n",
+    "        self.__destCol=col\n",
     "        self.__destTime=0\n",
     "        self.__boxes=list()\n",
     "        self.__labels=list()\n",
@@ -8791,6 +8825,19 @@
     "    #use ordArray[i][colNum] for selection\n",
     "    return ind    \n",
     "\n",
+    "def ordersInRadius(wh,r):    #Usage ordersInRadius(2,30)\n",
+    "    wr,wc=w[wh].getPos()\n",
+    "    return np.count_nonzero(  (ordArray[:,1]-wr)**2 + (ordArray[:,2]-wc)**2 <r**2 ) \n",
+    "\n",
+    "def dronesInRadius(wh,r):    #Usage dronesInRadius(2,30)\n",
+    "    count=0\n",
+    "    wr,wc=w[wh].getPos()\n",
+    "    for i in range(Drone.getQty()):\n",
+    "        dr,dc=d[i].getDest()\n",
+    "        if ((dr-wr)**2 + (dc-wc)**2 <r**2 ):\n",
+    "            count+=1\n",
+    "    return count\n",
+    "\n",
     "def knn(x, X, k, **kwargs):\n",
     "    \"\"\"\n",
     "    find indices of k-nearest neighbors of x in X\n",
@@ -8869,6 +8916,8 @@
     "                d=list()\n",
     "                for i in range(int(droneqty)):\n",
     "                    d.append(Drone(row,col,maxLoad))\n",
+    "                    d[i].setDest(row,col)\n",
+    "                    ic(d[i].getDest())\n",
     "            elif phase==3:  ########  Customer orders   ##############\n",
     "                totalOrders=int(line)\n",
     "                print(\"There are {} total orders\".format(totalOrders))\n",
@@ -9080,1035 +9129,95 @@
     "    \n",
     "    \n",
     "    \n",
-    "raise SystemExit(\"Stop right here to evaluate!\") "
+    "#raise SystemExit(\"Stop right here to evaluate!\") "
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 141,
-   "id": "8a827868",
+   "execution_count": 190,
+   "id": "f264f6f2",
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "{(113, 179): 0,\n",
-       " (234, 599): 1,\n",
-       " (195, 89): 2,\n",
-       " (215, 207): 3,\n",
-       " (220, 326): 4,\n",
-       " (182, 193): 5,\n",
-       " (75, 418): 6,\n",
-       " (228, 140): 7,\n",
-       " (310, 26): 8,\n",
-       " (297, 423): 9,\n",
-       " (340, 371): 10,\n",
-       " (163, 320): 11,\n",
-       " (201, 331): 12,\n",
-       " (257, 290): 13,\n",
-       " (115, 512): 14,\n",
-       " (154, 147): 15,\n",
-       " (188, 326): 16,\n",
-       " (210, 180): 17,\n",
-       " (92, 216): 18,\n",
-       " (135, 190): 19,\n",
-       " (254, 201): 20,\n",
-       " (198, 328): 21,\n",
-       " (193, 254): 22,\n",
-       " (259, 211): 23,\n",
-       " (211, 211): 24,\n",
-       " (298, 230): 25,\n",
-       " (265, 417): 26,\n",
-       " (241, 301): 27,\n",
-       " (252, 200): 28,\n",
-       " (143, 286): 29,\n",
-       " (264, 236): 30,\n",
-       " (56, 257): 31,\n",
-       " (180, 348): 32,\n",
-       " (299, 391): 33,\n",
-       " (273, 402): 34,\n",
-       " (123, 358): 35,\n",
-       " (293, 238): 36,\n",
-       " (252, 275): 37,\n",
-       " (91, 246): 38,\n",
-       " (203, 228): 39,\n",
-       " (228, 120): 40,\n",
-       " (134, 204): 41,\n",
-       " (125, 215): 42,\n",
-       " (230, 335): 43,\n",
-       " (145, 415): 44,\n",
-       " (112, 397): 45,\n",
-       " (107, 382): 46,\n",
-       " (232, 214): 47,\n",
-       " (273, 229): 48,\n",
-       " (227, 250): 49,\n",
-       " (357, 359): 50,\n",
-       " (189, 225): 51,\n",
-       " (262, 427): 52,\n",
-       " (109, 272): 53,\n",
-       " (243, 306): 54,\n",
-       " (194, 232): 55,\n",
-       " (48, 289): 56,\n",
-       " (10, 162): 57,\n",
-       " (90, 473): 58,\n",
-       " (242, 225): 59,\n",
-       " (107, 353): 60,\n",
-       " (115, 366): 61,\n",
-       " (236, 404): 62,\n",
-       " (168, 150): 63,\n",
-       " (230, 135): 64,\n",
-       " (143, 394): 65,\n",
-       " (275, 343): 66,\n",
-       " (109, 382): 67,\n",
-       " (274, 336): 68,\n",
-       " (168, 287): 69,\n",
-       " (185, 338): 70,\n",
-       " (105, 254): 71,\n",
-       " (237, 243): 72,\n",
-       " (221, 395): 73,\n",
-       " (269, 258): 74,\n",
-       " (244, 405): 75,\n",
-       " (147, 363): 76,\n",
-       " (293, 131): 77,\n",
-       " (295, 304): 78,\n",
-       " (216, 127): 79,\n",
-       " (223, 394): 80,\n",
-       " (283, 280): 81,\n",
-       " (126, 275): 82,\n",
-       " (192, 257): 83,\n",
-       " (228, 384): 84,\n",
-       " (267, 233): 85,\n",
-       " (194, 323): 86,\n",
-       " (75, 294): 87,\n",
-       " (268, 281): 88,\n",
-       " (178, 316): 89,\n",
-       " (262, 245): 90,\n",
-       " (255, 211): 91,\n",
-       " (388, 237): 92,\n",
-       " (136, 260): 93,\n",
-       " (120, 272): 94,\n",
-       " (180, 171): 95,\n",
-       " (284, 142): 96,\n",
-       " (274, 348): 97,\n",
-       " (158, 195): 98,\n",
-       " (235, 422): 99,\n",
-       " (232, 154): 100,\n",
-       " (216, 247): 101,\n",
-       " (244, 477): 102,\n",
-       " (259, 273): 103,\n",
-       " (257, 192): 104,\n",
-       " (190, 261): 105,\n",
-       " (187, 351): 106,\n",
-       " (180, 308): 107,\n",
-       " (260, 513): 108,\n",
-       " (126, 342): 109,\n",
-       " (259, 354): 110,\n",
-       " (113, 341): 111,\n",
-       " (199, 270): 112,\n",
-       " (198, 360): 113,\n",
-       " (193, 238): 114,\n",
-       " (169, 278): 115,\n",
-       " (214, 214): 116,\n",
-       " (318, 388): 117,\n",
-       " (270, 321): 118,\n",
-       " (270, 359): 119,\n",
-       " (163, 260): 120,\n",
-       " (124, 366): 121,\n",
-       " (234, 221): 122,\n",
-       " (95, 533): 123,\n",
-       " (255, 259): 124,\n",
-       " (94, 476): 125,\n",
-       " (193, 243): 126,\n",
-       " (209, 171): 127,\n",
-       " (289, 284): 128,\n",
-       " (186, 390): 129,\n",
-       " (169, 133): 130,\n",
-       " (102, 277): 131,\n",
-       " (173, 242): 132,\n",
-       " (284, 416): 133,\n",
-       " (183, 245): 134,\n",
-       " (321, 485): 135,\n",
-       " (280, 349): 136,\n",
-       " (90, 380): 137,\n",
-       " (142, 298): 138,\n",
-       " (149, 249): 139,\n",
-       " (175, 375): 140,\n",
-       " (211, 242): 141,\n",
-       " (196, 301): 142,\n",
-       " (108, 206): 143,\n",
-       " (220, 386): 144,\n",
-       " (208, 299): 145,\n",
-       " (220, 215): 146,\n",
-       " (276, 131): 147,\n",
-       " (301, 354): 148,\n",
-       " (153, 353): 149,\n",
-       " (99, 183): 150,\n",
-       " (155, 131): 151,\n",
-       " (189, 234): 152,\n",
-       " (220, 249): 153,\n",
-       " (226, 269): 154,\n",
-       " (237, 268): 155,\n",
-       " (183, 363): 156,\n",
-       " (146, 204): 157,\n",
-       " (149, 275): 158,\n",
-       " (267, 225): 159,\n",
-       " (221, 398): 160,\n",
-       " (188, 195): 161,\n",
-       " (202, 417): 162,\n",
-       " (158, 186): 163,\n",
-       " (216, 307): 164,\n",
-       " (171, 95): 165,\n",
-       " (181, 346): 166,\n",
-       " (239, 94): 167,\n",
-       " (245, 226): 168,\n",
-       " (233, 328): 169,\n",
-       " (123, 116): 170,\n",
-       " (128, 423): 171,\n",
-       " (121, 489): 172,\n",
-       " (141, 300): 173,\n",
-       " (276, 329): 174,\n",
-       " (253, 398): 175,\n",
-       " (253, 390): 176,\n",
-       " (185, 345): 177,\n",
-       " (209, 352): 178,\n",
-       " (239, 224): 179,\n",
-       " (277, 440): 180,\n",
-       " (187, 314): 181,\n",
-       " (139, 374): 182,\n",
-       " (213, 398): 183,\n",
-       " (65, 355): 184,\n",
-       " (163, 197): 185,\n",
-       " (3, 83): 186,\n",
-       " (255, 256): 187,\n",
-       " (161, 437): 188,\n",
-       " (313, 110): 189,\n",
-       " (209, 164): 190,\n",
-       " (119, 239): 191,\n",
-       " (222, 528): 192,\n",
-       " (263, 430): 193,\n",
-       " (229, 214): 194,\n",
-       " (266, 338): 195,\n",
-       " (221, 278): 196,\n",
-       " (179, 211): 197,\n",
-       " (250, 414): 198,\n",
-       " (115, 270): 199,\n",
-       " (251, 211): 200,\n",
-       " (95, 352): 201,\n",
-       " (138, 87): 202,\n",
-       " (115, 189): 203,\n",
-       " (225, 258): 204,\n",
-       " (285, 131): 205,\n",
-       " (192, 148): 206,\n",
-       " (395, 185): 207,\n",
-       " (117, 165): 208,\n",
-       " (163, 266): 209,\n",
-       " (289, 390): 210,\n",
-       " (111, 477): 211,\n",
-       " (265, 302): 212,\n",
-       " (281, 226): 213,\n",
-       " (253, 235): 214,\n",
-       " (216, 209): 215,\n",
-       " (115, 361): 216,\n",
-       " (265, 354): 217,\n",
-       " (180, 232): 218,\n",
-       " (271, 341): 219,\n",
-       " (261, 227): 220,\n",
-       " (351, 353): 221,\n",
-       " (265, 264): 222,\n",
-       " (172, 438): 223,\n",
-       " (141, 55): 224,\n",
-       " (113, 208): 225,\n",
-       " (135, 311): 226,\n",
-       " (275, 391): 227,\n",
-       " (125, 274): 228,\n",
-       " (197, 149): 229,\n",
-       " (116, 389): 230,\n",
-       " (335, 211): 231,\n",
-       " (187, 242): 232,\n",
-       " (143, 259): 233,\n",
-       " (245, 215): 234,\n",
-       " (93, 432): 235,\n",
-       " (212, 165): 236,\n",
-       " (122, 421): 237,\n",
-       " (184, 156): 238,\n",
-       " (118, 256): 239,\n",
-       " (309, 284): 240,\n",
-       " (118, 259): 241,\n",
-       " (371, 208): 242,\n",
-       " (249, 333): 243,\n",
-       " (280, 247): 244,\n",
-       " (143, 311): 245,\n",
-       " (259, 250): 246,\n",
-       " (187, 12): 247,\n",
-       " (284, 110): 248,\n",
-       " (258, 370): 249,\n",
-       " (133, 538): 250,\n",
-       " (170, 166): 251,\n",
-       " (359, 257): 252,\n",
-       " (183, 182): 253,\n",
-       " (275, 353): 254,\n",
-       " (99, 504): 255,\n",
-       " (113, 216): 256,\n",
-       " (183, 463): 257,\n",
-       " (147, 302): 258,\n",
-       " (254, 168): 259,\n",
-       " (261, 232): 260,\n",
-       " (150, 153): 261,\n",
-       " (353, 418): 262,\n",
-       " (224, 412): 263,\n",
-       " (257, 276): 264,\n",
-       " (37, 159): 265,\n",
-       " (236, 396): 266,\n",
-       " (167, 277): 267,\n",
-       " (276, 345): 268,\n",
-       " (253, 213): 269,\n",
-       " (169, 250): 270,\n",
-       " (258, 478): 271,\n",
-       " (241, 131): 272,\n",
-       " (204, 381): 273,\n",
-       " (192, 331): 274,\n",
-       " (283, 329): 275,\n",
-       " (278, 364): 276,\n",
-       " (168, 255): 277,\n",
-       " (191, 408): 278,\n",
-       " (108, 427): 279,\n",
-       " (301, 164): 280,\n",
-       " (299, 89): 281,\n",
-       " (270, 248): 282,\n",
-       " (266, 241): 283,\n",
-       " (252, 206): 284,\n",
-       " (231, 161): 285,\n",
-       " (217, 150): 286,\n",
-       " (20, 377): 287,\n",
-       " (154, 170): 288,\n",
-       " (103, 379): 289,\n",
-       " (323, 319): 290,\n",
-       " (263, 220): 291,\n",
-       " (346, 373): 292,\n",
-       " (131, 275): 293,\n",
-       " (256, 17): 294,\n",
-       " (152, 417): 295,\n",
-       " (146, 455): 296,\n",
-       " (190, 237): 297,\n",
-       " (172, 448): 298,\n",
-       " (188, 379): 299,\n",
-       " (160, 154): 300,\n",
-       " (380, 259): 301,\n",
-       " (106, 256): 302,\n",
-       " (212, 166): 303,\n",
-       " (260, 122): 304,\n",
-       " (171, 282): 305,\n",
-       " (227, 299): 306,\n",
-       " (241, 313): 307,\n",
-       " (274, 226): 308,\n",
-       " (249, 212): 309,\n",
-       " (229, 222): 310,\n",
-       " (201, 358): 311,\n",
-       " (137, 292): 312,\n",
-       " (167, 399): 313,\n",
-       " (252, 223): 314,\n",
-       " (104, 223): 315,\n",
-       " (274, 354): 316,\n",
-       " (197, 337): 317,\n",
-       " (130, 256): 318,\n",
-       " (215, 404): 319,\n",
-       " (117, 357): 320,\n",
-       " (157, 232): 321,\n",
-       " (199, 85): 322,\n",
-       " (185, 183): 323,\n",
-       " (119, 364): 324,\n",
-       " (109, 268): 325,\n",
-       " (185, 410): 326,\n",
-       " (123, 75): 327,\n",
-       " (107, 374): 328,\n",
-       " (313, 121): 329,\n",
-       " (274, 370): 330,\n",
-       " (190, 397): 331,\n",
-       " (127, 298): 332,\n",
-       " (237, 225): 333,\n",
-       " (265, 225): 334,\n",
-       " (120, 365): 335,\n",
-       " (281, 240): 336,\n",
-       " (168, 421): 337,\n",
-       " (163, 423): 338,\n",
-       " (275, 272): 339,\n",
-       " (313, 279): 340,\n",
-       " (269, 364): 341,\n",
-       " (184, 390): 342,\n",
-       " (256, 196): 343,\n",
-       " (369, 224): 344,\n",
-       " (4, 481): 345,\n",
-       " (192, 341): 346,\n",
-       " (289, 291): 347,\n",
-       " (202, 143): 348,\n",
-       " (159, 149): 349,\n",
-       " (333, 449): 350,\n",
-       " (70, 295): 351,\n",
-       " (188, 165): 352,\n",
-       " (127, 164): 353,\n",
-       " (188, 327): 354,\n",
-       " (118, 129): 355,\n",
-       " (114, 265): 356,\n",
-       " (17, 487): 357,\n",
-       " (181, 265): 358,\n",
-       " (199, 221): 359,\n",
-       " (70, 233): 360,\n",
-       " (263, 145): 361,\n",
-       " (225, 277): 362,\n",
-       " (269, 195): 363,\n",
-       " (143, 525): 364,\n",
-       " (256, 282): 365,\n",
-       " (195, 400): 366,\n",
-       " (241, 451): 367,\n",
-       " (329, 153): 368,\n",
-       " (215, 128): 369,\n",
-       " (354, 431): 370,\n",
-       " (158, 271): 371,\n",
-       " (182, 376): 372,\n",
-       " (208, 350): 373,\n",
-       " (155, 367): 374,\n",
-       " (138, 500): 375,\n",
-       " (135, 357): 376,\n",
-       " (274, 403): 377,\n",
-       " (271, 233): 378,\n",
-       " (307, 160): 379,\n",
-       " (254, 85): 380,\n",
-       " (69, 349): 381,\n",
-       " (226, 214): 382,\n",
-       " (226, 217): 383,\n",
-       " (125, 374): 384,\n",
-       " (232, 271): 385,\n",
-       " (50, 352): 386,\n",
-       " (257, 215): 387,\n",
-       " (164, 424): 388,\n",
-       " (309, 400): 389,\n",
-       " (143, 449): 390,\n",
-       " (257, 221): 391,\n",
-       " (195, 316): 392,\n",
-       " (160, 53): 393,\n",
-       " (105, 271): 394,\n",
-       " (175, 312): 395,\n",
-       " (199, 197): 396,\n",
-       " (227, 106): 397,\n",
-       " (290, 393): 398,\n",
-       " (190, 254): 399,\n",
-       " (104, 168): 400,\n",
-       " (297, 412): 401,\n",
-       " (191, 191): 402,\n",
-       " (251, 110): 403,\n",
-       " (177, 244): 404,\n",
-       " (294, 473): 405,\n",
-       " (326, 409): 406,\n",
-       " (251, 366): 407,\n",
-       " (176, 263): 408,\n",
-       " (93, 232): 409,\n",
-       " (278, 236): 410,\n",
-       " (261, 330): 411,\n",
-       " (206, 148): 412,\n",
-       " (209, 247): 413,\n",
-       " (241, 191): 414,\n",
-       " (299, 457): 415,\n",
-       " (199, 351): 416,\n",
-       " (195, 264): 417,\n",
-       " (302, 222): 418,\n",
-       " (134, 193): 419,\n",
-       " (195, 328): 420,\n",
-       " (247, 229): 421,\n",
-       " (113, 318): 422,\n",
-       " (158, 177): 423,\n",
-       " (278, 176): 424,\n",
-       " (172, 307): 425,\n",
-       " (266, 366): 426,\n",
-       " (219, 220): 427,\n",
-       " (259, 185): 428,\n",
-       " (142, 50): 429,\n",
-       " (257, 226): 430,\n",
-       " (327, 497): 431,\n",
-       " (230, 328): 432,\n",
-       " (66, 482): 433,\n",
-       " (168, 144): 434,\n",
-       " (169, 187): 435,\n",
-       " (208, 106): 436,\n",
-       " (240, 104): 437,\n",
-       " (275, 193): 438,\n",
-       " (202, 159): 439,\n",
-       " (243, 211): 440,\n",
-       " (95, 130): 441,\n",
-       " (205, 339): 442,\n",
-       " (269, 332): 443,\n",
-       " (274, 371): 444,\n",
-       " (259, 350): 445,\n",
-       " (182, 236): 446,\n",
-       " (139, 148): 447,\n",
-       " (276, 256): 448,\n",
-       " (114, 263): 449,\n",
-       " (221, 424): 450,\n",
-       " (134, 277): 451,\n",
-       " (295, 205): 452,\n",
-       " (158, 275): 453,\n",
-       " (192, 396): 454,\n",
-       " (188, 260): 455,\n",
-       " (265, 259): 456,\n",
-       " (160, 339): 457,\n",
-       " (126, 236): 458,\n",
-       " (228, 290): 459,\n",
-       " (243, 223): 460,\n",
-       " (182, 354): 461,\n",
-       " (130, 206): 462,\n",
-       " (143, 226): 463,\n",
-       " (212, 134): 464,\n",
-       " (125, 273): 465,\n",
-       " (217, 213): 466,\n",
-       " (149, 297): 467,\n",
-       " (207, 331): 468,\n",
-       " (87, 326): 469,\n",
-       " (245, 369): 470,\n",
-       " (171, 353): 471,\n",
-       " (102, 248): 472,\n",
-       " (185, 268): 473,\n",
-       " (185, 227): 474,\n",
-       " (285, 218): 475,\n",
-       " (274, 228): 476,\n",
-       " (266, 352): 477,\n",
-       " (164, 376): 478,\n",
-       " (201, 369): 479,\n",
-       " (92, 296): 480,\n",
-       " (234, 228): 481,\n",
-       " (172, 370): 482,\n",
-       " (244, 231): 483,\n",
-       " (173, 66): 484,\n",
-       " (115, 170): 485,\n",
-       " (283, 228): 486,\n",
-       " (239, 216): 487,\n",
-       " (267, 226): 488,\n",
-       " (231, 257): 489,\n",
-       " (272, 259): 490,\n",
-       " (180, 416): 491,\n",
-       " (257, 81): 492,\n",
-       " (220, 148): 493,\n",
-       " (111, 295): 494,\n",
-       " (90, 219): 495,\n",
-       " (172, 195): 496,\n",
-       " (296, 217): 497,\n",
-       " (205, 120): 498,\n",
-       " (137, 243): 499,\n",
-       " (127, 532): 500,\n",
-       " (163, 456): 501,\n",
-       " (168, 170): 502,\n",
-       " (108, 325): 503,\n",
-       " (19, 185): 504,\n",
-       " (246, 231): 505,\n",
-       " (316, 239): 506,\n",
-       " (226, 456): 507,\n",
-       " (251, 205): 508,\n",
-       " (85, 270): 509,\n",
-       " (194, 361): 510,\n",
-       " (177, 131): 511,\n",
-       " (104, 373): 512,\n",
-       " (136, 444): 513,\n",
-       " (281, 383): 514,\n",
-       " (226, 472): 515,\n",
-       " (257, 230): 516,\n",
-       " (221, 102): 517,\n",
-       " (233, 224): 518,\n",
-       " (83, 298): 519,\n",
-       " (278, 211): 520,\n",
-       " (230, 268): 521,\n",
-       " (187, 89): 522,\n",
-       " (172, 427): 523,\n",
-       " (284, 354): 524,\n",
-       " (318, 276): 525,\n",
-       " (277, 345): 526,\n",
-       " (183, 114): 527,\n",
-       " (239, 577): 528,\n",
-       " (266, 251): 529,\n",
-       " (251, 224): 530,\n",
-       " (191, 207): 531,\n",
-       " (263, 192): 532,\n",
-       " (297, 331): 533,\n",
-       " (131, 281): 534,\n",
-       " (121, 276): 535,\n",
-       " (276, 372): 536,\n",
-       " (116, 274): 537,\n",
-       " (165, 200): 538,\n",
-       " (112, 309): 539,\n",
-       " (197, 266): 540,\n",
-       " (281, 334): 541,\n",
-       " (240, 451): 542,\n",
-       " (131, 304): 543,\n",
-       " (307, 81): 544,\n",
-       " (192, 136): 545,\n",
-       " (120, 264): 546,\n",
-       " (132, 57): 547,\n",
-       " (125, 427): 548,\n",
-       " (265, 366): 549,\n",
-       " (244, 229): 550,\n",
-       " (181, 83): 551,\n",
-       " (211, 181): 552,\n",
-       " (91, 364): 553,\n",
-       " (264, 324): 554,\n",
-       " (189, 475): 555,\n",
-       " (69, 489): 556,\n",
-       " (97, 181): 557,\n",
-       " (149, 230): 558,\n",
-       " (156, 249): 559,\n",
-       " (161, 359): 560,\n",
-       " (271, 385): 561,\n",
-       " (213, 153): 562,\n",
-       " (111, 270): 563,\n",
-       " (319, 261): 564,\n",
-       " (252, 146): 565,\n",
-       " (62, 304): 566,\n",
-       " (312, 422): 567,\n",
-       " (268, 356): 568,\n",
-       " (305, 379): 569,\n",
-       " (197, 341): 570,\n",
-       " (226, 371): 571,\n",
-       " (35, 287): 572,\n",
-       " (220, 279): 573,\n",
-       " (249, 200): 574,\n",
-       " (210, 142): 575,\n",
-       " (84, 318): 576,\n",
-       " (25, 452): 577,\n",
-       " (51, 234): 578,\n",
-       " (170, 434): 579,\n",
-       " (222, 522): 580,\n",
-       " (237, 214): 581,\n",
-       " (167, 452): 582,\n",
-       " (175, 121): 583,\n",
-       " (100, 358): 584,\n",
-       " (294, 197): 585,\n",
-       " (205, 276): 586,\n",
-       " (251, 197): 587,\n",
-       " (344, 400): 588,\n",
-       " (119, 390): 589,\n",
-       " (264, 306): 590,\n",
-       " (202, 462): 591,\n",
-       " (305, 486): 592,\n",
-       " (249, 301): 593,\n",
-       " (204, 115): 594,\n",
-       " (198, 317): 595,\n",
-       " (195, 362): 596,\n",
-       " (132, 297): 597,\n",
-       " (254, 274): 598,\n",
-       " (113, 269): 599,\n",
-       " (187, 348): 600,\n",
-       " (247, 311): 601,\n",
-       " (212, 251): 602,\n",
-       " (261, 355): 603,\n",
-       " (180, 116): 604,\n",
-       " (256, 76): 605,\n",
-       " (42, 310): 606,\n",
-       " (146, 416): 607,\n",
-       " (113, 270): 608,\n",
-       " (227, 230): 609,\n",
-       " (210, 355): 610,\n",
-       " (205, 418): 611,\n",
-       " (92, 277): 612,\n",
-       " (268, 238): 613,\n",
-       " (110, 565): 614,\n",
-       " (196, 330): 615,\n",
-       " (256, 216): 616,\n",
-       " (206, 374): 617,\n",
-       " (261, 130): 618,\n",
-       " (33, 229): 619,\n",
-       " (212, 199): 620,\n",
-       " (250, 249): 621,\n",
-       " (249, 81): 622,\n",
-       " (243, 222): 623,\n",
-       " (301, 351): 624,\n",
-       " (108, 273): 625,\n",
-       " (271, 358): 626,\n",
-       " (290, 294): 627,\n",
-       " (167, 491): 628,\n",
-       " (58, 284): 629,\n",
-       " (140, 253): 630,\n",
-       " (109, 343): 631,\n",
-       " (196, 365): 632,\n",
-       " (66, 415): 633,\n",
-       " (90, 111): 634,\n",
-       " (165, 263): 635,\n",
-       " (179, 290): 636,\n",
-       " (117, 348): 637,\n",
-       " (202, 218): 638,\n",
-       " (252, 226): 639,\n",
-       " (196, 97): 640,\n",
-       " (325, 340): 641,\n",
-       " (259, 218): 642,\n",
-       " (221, 181): 643,\n",
-       " (221, 281): 644,\n",
-       " (204, 199): 645,\n",
-       " (242, 199): 646,\n",
-       " (250, 55): 647,\n",
-       " (93, 403): 648,\n",
-       " (270, 239): 649,\n",
-       " (146, 425): 650,\n",
-       " (179, 206): 651,\n",
-       " (194, 263): 652,\n",
-       " (270, 250): 653,\n",
-       " (63, 258): 654,\n",
-       " (309, 259): 655,\n",
-       " (248, 304): 656,\n",
-       " (289, 469): 657,\n",
-       " (235, 226): 658,\n",
-       " (228, 169): 659,\n",
-       " (101, 361): 660,\n",
-       " (189, 268): 661,\n",
-       " (121, 380): 662,\n",
-       " (228, 269): 663,\n",
-       " (96, 259): 664,\n",
-       " (119, 344): 665,\n",
-       " (109, 278): 666,\n",
-       " (241, 505): 667,\n",
-       " (279, 338): 668,\n",
-       " (237, 176): 669,\n",
-       " (173, 420): 670,\n",
-       " (132, 201): 671,\n",
-       " (220, 316): 672,\n",
-       " (181, 237): 673,\n",
-       " (190, 98): 674,\n",
-       " (150, 234): 675,\n",
-       " (185, 439): 676,\n",
-       " (280, 246): 677,\n",
-       " (249, 225): 678,\n",
-       " (163, 301): 679,\n",
-       " (175, 521): 680,\n",
-       " (270, 266): 681,\n",
-       " (17, 224): 682,\n",
-       " (293, 271): 683,\n",
-       " (112, 261): 684,\n",
-       " (105, 300): 685,\n",
-       " (245, 290): 686,\n",
-       " (186, 476): 687,\n",
-       " (152, 159): 688,\n",
-       " (266, 379): 689,\n",
-       " (242, 223): 690,\n",
-       " (177, 283): 691,\n",
-       " (187, 189): 692,\n",
-       " (265, 210): 693,\n",
-       " (168, 236): 694,\n",
-       " (292, 523): 695,\n",
-       " (109, 357): 696,\n",
-       " (150, 335): 697,\n",
-       " (190, 370): 698,\n",
-       " (130, 411): 699,\n",
-       " (284, 236): 700,\n",
-       " (255, 91): 701,\n",
-       " (274, 418): 702,\n",
-       " (188, 176): 703,\n",
-       " (141, 361): 704,\n",
-       " (275, 241): 705,\n",
-       " (245, 237): 706,\n",
-       " (149, 220): 707,\n",
-       " (110, 265): 708,\n",
-       " (128, 315): 709,\n",
-       " (156, 407): 710,\n",
-       " (243, 122): 711,\n",
-       " (221, 433): 712,\n",
-       " (248, 300): 713,\n",
-       " (104, 350): 714,\n",
-       " (313, 374): 715,\n",
-       " (314, 477): 716,\n",
-       " (312, 195): 717,\n",
-       " (211, 325): 718,\n",
-       " (297, 278): 719,\n",
-       " (304, 15): 720,\n",
-       " (227, 282): 721,\n",
-       " (56, 355): 722,\n",
-       " (113, 284): 723,\n",
-       " (230, 49): 724,\n",
-       " (277, 417): 725,\n",
-       " (238, 191): 726,\n",
-       " (281, 370): 727,\n",
-       " (263, 221): 728,\n",
-       " (93, 393): 729,\n",
-       " (282, 361): 730,\n",
-       " (241, 411): 731,\n",
-       " (99, 263): 732,\n",
-       " (191, 234): 733,\n",
-       " (176, 106): 734,\n",
-       " (230, 230): 735,\n",
-       " (111, 341): 736,\n",
-       " (164, 348): 737,\n",
-       " (196, 350): 738,\n",
-       " (277, 447): 739,\n",
-       " (339, 232): 740,\n",
-       " (164, 175): 741,\n",
-       " (159, 190): 742,\n",
-       " (144, 69): 743,\n",
-       " (232, 318): 744,\n",
-       " (248, 513): 745,\n",
-       " (202, 323): 746,\n",
-       " (201, 556): 747,\n",
-       " (283, 288): 748,\n",
-       " (175, 431): 749,\n",
-       " (163, 214): 750,\n",
-       " (203, 410): 751,\n",
-       " (257, 327): 752,\n",
-       " (323, 333): 753,\n",
-       " (108, 269): 754,\n",
-       " (113, 428): 755,\n",
-       " (316, 164): 756,\n",
-       " (113, 373): 757,\n",
-       " (260, 82): 758,\n",
-       " (206, 269): 759,\n",
-       " (67, 180): 760,\n",
-       " (298, 101): 761,\n",
-       " (194, 151): 762,\n",
-       " (208, 340): 763,\n",
-       " (143, 78): 764,\n",
-       " (334, 491): 765,\n",
-       " (309, 256): 766,\n",
-       " (203, 529): 767,\n",
-       " (279, 360): 768,\n",
-       " (264, 218): 769,\n",
-       " (310, 479): 770,\n",
-       " (220, 315): 771,\n",
-       " (127, 254): 772,\n",
-       " (144, 275): 773,\n",
-       " (151, 130): 774,\n",
-       " (174, 342): 775,\n",
-       " (257, 346): 776,\n",
-       " (258, 110): 777,\n",
-       " (106, 288): 778,\n",
-       " (305, 267): 779,\n",
-       " (167, 272): 780,\n",
-       " (74, 290): 781,\n",
-       " (230, 197): 782,\n",
-       " (285, 223): 783,\n",
-       " (334, 291): 784,\n",
-       " (103, 319): 785,\n",
-       " (115, 359): 786,\n",
-       " (116, 184): 787,\n",
-       " (229, 364): 788,\n",
-       " (295, 316): 789,\n",
-       " (274, 248): 790,\n",
-       " (44, 386): 791,\n",
-       " (258, 222): 792,\n",
-       " (178, 447): 793,\n",
-       " (114, 274): 794,\n",
-       " (107, 383): 795,\n",
-       " (249, 219): 796,\n",
-       " (133, 350): 797,\n",
-       " (232, 68): 798,\n",
-       " (230, 276): 799,\n",
-       " (127, 273): 800,\n",
-       " (249, 311): 801,\n",
-       " (202, 216): 802,\n",
-       " (156, 236): 803,\n",
-       " (97, 304): 804,\n",
-       " (216, 192): 805,\n",
-       " (288, 492): 806,\n",
-       " (238, 295): 807,\n",
-       " (227, 306): 808,\n",
-       " (388, 284): 809,\n",
-       " (136, 170): 810,\n",
-       " (238, 227): 811,\n",
-       " (186, 350): 812,\n",
-       " (217, 205): 813,\n",
-       " (214, 236): 814,\n",
-       " (237, 385): 815,\n",
-       " (235, 211): 816,\n",
-       " (14, 172): 817,\n",
-       " (248, 214): 818,\n",
-       " (212, 351): 819,\n",
-       " (228, 355): 820,\n",
-       " (235, 247): 821,\n",
-       " (252, 240): 822,\n",
-       " (90, 281): 823,\n",
-       " (267, 354): 824,\n",
-       " (185, 570): 825,\n",
-       " (307, 110): 826,\n",
-       " (180, 320): 827,\n",
-       " (244, 442): 828,\n",
-       " (210, 125): 829,\n",
-       " (172, 268): 830,\n",
-       " (145, 367): 831,\n",
-       " (279, 345): 832,\n",
-       " (218, 211): 833,\n",
-       " (123, 267): 834,\n",
-       " (113, 332): 835,\n",
-       " (342, 219): 836,\n",
-       " (199, 344): 837,\n",
-       " (252, 41): 838,\n",
-       " (201, 346): 839,\n",
-       " (184, 576): 840,\n",
-       " (262, 229): 841,\n",
-       " (279, 336): 842,\n",
-       " (237, 229): 843,\n",
-       " (113, 259): 844,\n",
-       " (162, 458): 845,\n",
-       " (311, 411): 846,\n",
-       " (298, 116): 847,\n",
-       " (269, 265): 848,\n",
-       " (248, 335): 849,\n",
-       " (253, 229): 850,\n",
-       " (332, 301): 851,\n",
-       " (283, 346): 852,\n",
-       " (269, 357): 853,\n",
-       " (227, 195): 854,\n",
-       " (9, 347): 855,\n",
-       " (307, 276): 856,\n",
-       " (193, 384): 857,\n",
-       " (191, 358): 858,\n",
-       " (192, 342): 859,\n",
-       " (245, 353): 860,\n",
-       " (252, 215): 861,\n",
-       " (136, 383): 862,\n",
-       " (204, 168): 863,\n",
-       " (185, 270): 864,\n",
-       " (118, 395): 865,\n",
-       " (120, 274): 866,\n",
-       " (258, 359): 867,\n",
-       " (193, 341): 868,\n",
-       " (104, 383): 869,\n",
-       " (130, 180): 870,\n",
-       " (199, 345): 871,\n",
-       " (177, 252): 872,\n",
-       " (329, 236): 873,\n",
-       " (138, 253): 874,\n",
-       " (221, 297): 875,\n",
-       " (264, 214): 876,\n",
-       " (378, 340): 877,\n",
-       " (337, 225): 878,\n",
-       " (160, 249): 879,\n",
-       " (175, 338): 880,\n",
-       " (123, 407): 881,\n",
-       " (117, 379): 882,\n",
-       " (166, 357): 883,\n",
-       " (43, 60): 884,\n",
-       " (300, 427): 885,\n",
-       " (251, 243): 886,\n",
-       " (180, 318): 887,\n",
-       " (71, 305): 888,\n",
-       " (197, 146): 889,\n",
-       " (332, 52): 890,\n",
-       " (259, 130): 891,\n",
-       " (303, 402): 892,\n",
-       " (116, 380): 893,\n",
-       " (253, 184): 894,\n",
-       " (132, 415): 895,\n",
-       " (273, 226): 896,\n",
-       " (272, 241): 897,\n",
-       " (130, 164): 898,\n",
-       " (194, 401): 899,\n",
-       " (178, 136): 900,\n",
-       " (314, 275): 901,\n",
-       " (275, 184): 902,\n",
-       " (87, 255): 903,\n",
-       " (83, 365): 904,\n",
-       " (152, 446): 905,\n",
-       " (379, 340): 906,\n",
-       " (231, 314): 907,\n",
-       " (267, 334): 908,\n",
-       " (227, 320): 909,\n",
-       " (196, 391): 910,\n",
-       " (168, 224): 911,\n",
-       " (325, 357): 912,\n",
-       " (242, 394): 913,\n",
-       " (176, 282): 914,\n",
-       " (135, 353): 915,\n",
-       " (261, 562): 916,\n",
-       " (196, 361): 917,\n",
-       " (101, 374): 918,\n",
-       " (261, 233): 919,\n",
-       " (167, 261): 920,\n",
-       " (240, 203): 921,\n",
-       " (312, 394): 922,\n",
-       " (171, 305): 923,\n",
-       " (253, 212): 924,\n",
-       " (283, 412): 925,\n",
-       " (265, 546): 926,\n",
-       " (249, 195): 927,\n",
-       " (216, 455): 928,\n",
-       " (206, 284): 929,\n",
-       " (79, 189): 930,\n",
-       " (164, 315): 931,\n",
-       " (156, 245): 932,\n",
-       " (221, 184): 933,\n",
-       " (98, 165): 934,\n",
-       " (173, 454): 935,\n",
-       " (116, 289): 936,\n",
-       " (315, 120): 937,\n",
-       " (204, 256): 938,\n",
-       " (148, 219): 939,\n",
-       " (137, 461): 940,\n",
-       " (165, 83): 941,\n",
-       " (235, 318): 942,\n",
-       " (227, 303): 943,\n",
-       " (185, 208): 944,\n",
-       " (240, 407): 945,\n",
-       " (115, 371): 946,\n",
-       " (171, 442): 947,\n",
-       " (154, 332): 948,\n",
-       " (215, 109): 949,\n",
-       " (280, 379): 950,\n",
-       " (244, 228): 951,\n",
-       " (259, 342): 952,\n",
-       " (310, 370): 953,\n",
-       " (109, 372): 954,\n",
-       " (76, 538): 955,\n",
-       " (260, 369): 956,\n",
-       " (223, 280): 957,\n",
-       " (104, 400): 958,\n",
-       " (112, 348): 959,\n",
-       " (171, 250): 960,\n",
-       " (120, 360): 961,\n",
-       " (110, 258): 962,\n",
-       " (81, 368): 963,\n",
-       " (187, 309): 964,\n",
-       " (310, 306): 965,\n",
-       " (245, 306): 966,\n",
-       " (180, 235): 967,\n",
-       " (285, 190): 968,\n",
-       " (191, 193): 969,\n",
-       " (350, 256): 970,\n",
-       " (251, 367): 971,\n",
-       " (258, 392): 972,\n",
-       " (263, 236): 973,\n",
-       " (201, 333): 974,\n",
-       " (373, 304): 975,\n",
-       " (262, 139): 976,\n",
-       " (236, 153): 977,\n",
-       " (295, 404): 978,\n",
-       " (266, 126): 979,\n",
-       " (268, 225): 980,\n",
-       " (193, 152): 981,\n",
-       " (270, 245): 982,\n",
-       " (107, 381): 983,\n",
-       " (298, 328): 984,\n",
-       " (175, 215): 985,\n",
-       " (162, 336): 986,\n",
-       " (248, 223): 987,\n",
-       " (155, 381): 988,\n",
-       " (229, 112): 989,\n",
-       " (183, 94): 990,\n",
-       " (245, 217): 991,\n",
-       " (272, 347): 992,\n",
-       " (99, 296): 993,\n",
-       " (172, 179): 994,\n",
-       " (313, 179): 995,\n",
-       " (256, 217): 996,\n",
-       " (109, 455): 997,\n",
-       " (196, 321): 998,\n",
-       " (235, 142): 999,\n",
-       " ...}"
+       "0"
       ]
      },
-     "execution_count": 141,
+     "execution_count": 190,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "len(locations)\n",
-    "locations"
+    "dronesInRadius2(0,30)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 182,
+   "id": "e4e293ea",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def dronesInRadius2(wh,r):    #Usage dronesInRadius(2,30)\n",
+    "    count=0\n",
+    "    wr,wc=w[wh].getPos()\n",
+    "    for i in range(Drone.getQty()):\n",
+    "        dr,dc=d[i].getDest()\n",
+    "        if ((dr-wr)**2 + (dc-wc)**2 <r**2 ):\n",
+    "            count+=1\n",
+    "    return count"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 191,
+   "id": "667c73a6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "30"
+      ]
+     },
+     "execution_count": 191,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "Drone.getQty()\n",
+    "#dr,dc=d[0].getDest()\n",
+    "#dr,dc"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 192,
+   "id": "4a5ce4b7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(False, False)"
+      ]
+     },
+     "execution_count": 192,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d[0].getDest()"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 18,
-   "id": "2296b09d",
+   "id": "192a6750",
    "metadata": {},
    "outputs": [
     {
@@ -10150,7 +9259,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "a302f8a6",
+   "id": "1aa60842",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -10158,7 +9267,7 @@
   {
    "cell_type": "code",
    "execution_count": 132,
-   "id": "93a49d2d",
+   "id": "49dba97d",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -10166,7 +9275,7 @@
   {
    "cell_type": "code",
    "execution_count": 133,
-   "id": "ec6d09b3",
+   "id": "d5b9468a",
    "metadata": {},
    "outputs": [
     {
@@ -10196,7 +9305,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "7268abf9",
+   "id": "302e0db6",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -10699,7 +9808,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "89462835",
+   "id": "aa809290",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -27477,7 +26586,7 @@
   {
    "cell_type": "code",
    "execution_count": 47,
-   "id": "4a949571",
+   "id": "5159dd6f",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -27553,7 +26662,7 @@
   {
    "cell_type": "code",
    "execution_count": 122,
-   "id": "d7b07442",
+   "id": "36981619",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -27575,7 +26684,7 @@
   {
    "cell_type": "code",
    "execution_count": 123,
-   "id": "a859f9bf",
+   "id": "f0421308",
    "metadata": {},
    "outputs": [
     {
@@ -27619,7 +26728,7 @@
   {
    "cell_type": "code",
    "execution_count": 125,
-   "id": "a8f49905",
+   "id": "71e0af58",
    "metadata": {
     "scrolled": true
    },
@@ -27642,65 +26751,100 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 119,
-   "id": "307a94f7",
+   "execution_count": 143,
+   "id": "1ebbfe3c",
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "array([[   0,  340,  371, ...,   54,   41,    0],\n",
-       "       [   1,  340,  371, ...,   54,   41,    0],\n",
-       "       [   2,  340,  371, ...,   54,   41,    0],\n",
-       "       ...,\n",
-       "       [9365,  157,  157, ...,   73,  148,    0],\n",
-       "       [9366,  157,  157, ...,   73,  148,    0],\n",
-       "       [9367,  157,  157, ...,   73,  148,    0]])"
+       "(113, 179)"
       ]
      },
-     "execution_count": 119,
+     "execution_count": 143,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "ordArray"
+    "wr,wc=w[0].getPos()\n",
+    "wr,wc"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 104,
-   "id": "921db857",
+   "execution_count": 149,
+   "id": "9cdc2c9e",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "only size-1 arrays can be converted to Python scalars",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn [149], line 2\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m#count instances of orders in radius r from point x,y that are not filled\u001b[39;00m\n\u001b[1;32m----> 2\u001b[0m n\u001b[38;5;241m=\u001b[39mnp\u001b[38;5;241m.\u001b[39mcount_nonzero((\u001b[43mdist\u001b[49m\u001b[43m(\u001b[49m\u001b[43m(\u001b[49m\u001b[43mordArray\u001b[49m\u001b[43m[\u001b[49m\u001b[43m:\u001b[49m\u001b[43m,\u001b[49m\u001b[38;5;241;43m1\u001b[39;49m\u001b[43m]\u001b[49m\u001b[43m,\u001b[49m\u001b[43mordArray\u001b[49m\u001b[43m[\u001b[49m\u001b[43m:\u001b[49m\u001b[43m,\u001b[49m\u001b[38;5;241;43m2\u001b[39;49m\u001b[43m]\u001b[49m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\u001b[43m(\u001b[49m\u001b[43mwr\u001b[49m\u001b[43m,\u001b[49m\u001b[43mwc\u001b[49m\u001b[43m)\u001b[49m\u001b[43m)\u001b[49m\u001b[38;5;241m<\u001b[39m\u001b[38;5;241m30\u001b[39m),axis\u001b[38;5;241m=\u001b[39m\u001b[38;5;241m1\u001b[39m)\n",
+      "Cell \u001b[1;32mIn [140], line 1284\u001b[0m, in \u001b[0;36mdist\u001b[1;34m(p1, p2)\u001b[0m\n\u001b[0;32m   1282\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mdist\u001b[39m(p1, p2):\n\u001b[0;32m   1283\u001b[0m     (x1, y1), (x2, y2) \u001b[38;5;241m=\u001b[39m p1, p2\n\u001b[1;32m-> 1284\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[43mmath\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43msqrt\u001b[49m\u001b[43m(\u001b[49m\u001b[43m(\u001b[49m\u001b[43mx2\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m-\u001b[39;49m\u001b[43m \u001b[49m\u001b[43mx1\u001b[49m\u001b[43m)\u001b[49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[38;5;241;43m2\u001b[39;49m\u001b[43m \u001b[49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[43m \u001b[49m\u001b[43m(\u001b[49m\u001b[43my2\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m-\u001b[39;49m\u001b[43m \u001b[49m\u001b[43my1\u001b[49m\u001b[43m)\u001b[49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[38;5;241;43m2\u001b[39;49m\u001b[43m)\u001b[49m\n",
+      "\u001b[1;31mTypeError\u001b[0m: only size-1 arrays can be converted to Python scalars"
+     ]
+    }
+   ],
+   "source": [
+    "#count instances of orders in radius r from point x,y that are not filled\n",
+    "n=np.count_nonzero((dist((ordArray[:,1],ordArray[:,2]),(wr,wc))<30),axis=1) #First, take the second column, all rows: a[:,1]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 170,
+   "id": "50ab1f5f",
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "(9368, 105)"
+       "31"
       ]
      },
-     "execution_count": 104,
+     "execution_count": 170,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "len(ord)\n",
-    "ordArray.shape"
+    "def ordersInRadius(wh,r):    #Usage ordersInRadius(2,30)\n",
+    "    wr,wc=w[wh].getPos()\n",
+    "    return np.count_nonzero(  (ordArray[:,1]-wr)**2 + (ordArray[:,2]-wc)**2 <r**2 ) \n",
+    "\n",
+    "ordersInRadius(2,15)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "632e4d49",
+   "execution_count": 151,
+   "id": "52e9ede3",
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([371, 371, 371, ..., 157, 157, 157])"
+      ]
+     },
+     "execution_count": 151,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "ordArray[:,2]"
+   ]
   },
   {
    "cell_type": "code",
    "execution_count": 109,
-   "id": "2ff83a05",
+   "id": "d992acfc",
    "metadata": {},
    "outputs": [
     {
